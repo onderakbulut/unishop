@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!-- googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,900&display=swap"
+        rel="stylesheet">
+    <!-- lineawesome -->
+    <link rel="stylesheet" href="images/icons/css/line-awesome.css">
+    <!-- megamenu -->
+    <link rel="stylesheet" href="./assets/css/megamenu.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="./assets/plugins/animate.min.css">
+    
+    <!-- custom theme css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <title>Uniso - eCommerce Design Template</title>
+</head>
+
+<body>
+    <div class="mask-overlay"></div>
+
+    <!-- mobile menu start -->
+    <div class="mobile-menu d-flex flex-column">
+        <a href="#" class="close-btn"><i class="las la-times"></i></a>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+			<li class="nav-item col-6" role="presentation">
+				<button class="nav-link text-grenadier active w-100 position-relative border-0" data-bs-toggle="tab"
+					data-bs-target="#menuTab">MENU</button>
+			</li>
+			<li class="nav-item col-6" role="presentation">
+				<button class="nav-link text-grenadier w-100 position-relative border-0" data-bs-toggle="tab"
+					data-bs-target="#categoryTab">CATEGORIES</button>
+			</li>
+		</ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="menuTab">
+                <ul class="sidebar-menu list-unstyled" id="side-group">
+					<li class="menu-item-has-children">
+						<a href="javascript:;" data-bs-toggle="collapse" data-bs-target="#demo" class="justify-content-between">
+							<span>Demo</span>
+							<span class="right-arrow"></span>
+						</a>
+						<ul class="collapse list-unstyled sub-menu" id="demo" data-bs-parent="#side-group">
+							<li class="menu-item-has-children">
+                                <a href="javascript:;" data-bs-toggle="collapse" data-bs-target="#home" class="justify-content-between">
+                                    <span>Home Pages</span>
+                                    <span class="right-arrow"></span>
+                                </a>
+                                <ul class="collapse list-unstyled sub-two" id="home" data-bs-parent="#demo">
+                                    <li><a href="#">Home Default</a></li>
+                                    <li><a href="#">Home Classic</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="javascript:;" data-bs-toggle="collapse" data-bs-target="#header" class="justify-content-between">
+                                    <span>Header Layouts</span>
+                                    <span class="right-arrow"></span>
+                                </a>
+                                <ul class="collapse list-unstyled sub-two" id="header" data-bs-parent="#demo">
+                                    <li><a href="#">Header Layout 1</a></li>
+                                    <li><a href="#">Header Layout 2</a></li>
+                                    <li><a href="#">Header Layout 3</a></li>
+                                </ul>
+                            </li>
+						</ul>
+					</li>
+					<li class="menu-item-has-children">
+                        <a href="javascript:;" data-bs-toggle="collapse" data-bs-target="#shop" class="justify-content-between">
+							<span>Shop</span>
+							<span class="right-arrow"></span>
+						</a>
+                        <ul class="collapse list-unstyled sub-menu" id="shop" data-bs-parent="#side-group">
+                            <li><a href="#">Grid Layout</a></li>
+                            <li><a href="#">Left Sidebar</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="las la-heart me-3 fs-20"></i> Wishlist</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="las la-search me-3 fs-20"></i> Search</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="las la-user me-3 fs-20"></i> Login / Register</a>
+                    </li>
+
+				</ul>
+            </div>
+            <div class="tab-pane fade" id="categoryTab">
+                <ul class="sidebar-menu list-unstyled" id="side-group">
+                    <li>
+                        <a href="#"><i class="las la-female me-3 fs-20"></i> Women’s Clothing</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="las la-male me-3 fs-20"></i> Men’s Clothing</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="las la-clock me-3 fs-20"></i> Watches</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="las la-glasses me-3 fs-20"></i> Accessories</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="las la-camera-retro me-3 fs-20"></i> Electric</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="las la-shoe-prints me-3 fs-20"></i> Shoes</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="las la-gem me-3 fs-20"></i> Jewellery</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="las la-tshirt me-3 fs-20"></i> T-Shirt</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="las la-child me-3 fs-20"></i> Toys, Kids & Baby</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="las la-chair me-3 fs-20"></i> Decor</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- mobile menu end -->
+
+    <!-- cart popup start -->
+    <div class="cart-popup">
+        <div class="cart-popup-inner h-100 d-flex flex-column">
+            <div class="cart-popup-header d-flex justify-content-between align-items-center p-3 p-lg-30">
+                <h3>My Cart</h3>
+                <a href="javascript:void(0);" class="close-cart text-reset"><i class="las la-times fs-24"></i></a>
+            </div>
+            <div class="cart-popup-content d-flex flex-column justify-content-between h-100">
+                <div class="position-relative h-100 overflow-auto custom-scroll">
+                   <div class="position-absolute top-0 bottom-0 start-0 end-0 px-3 px-lg-30 ">
+                        <div class="cart-popup-item border-top border-whisper py-3 py-lg-30 d-flex">
+                            <img src="images/mini-cart-item1.jpg" alt="..." class="me-3 me-lg-30">
+                            <div>
+                                <p class="text-woodsmoke">Funny Shorts with Mesh Lining Swimwear Bathing Suits</p>
+                                <p class="fs-15 text-woodsmoke fw-bold">XL / Black</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="quantity d-flex">
+                                        <button class="minus bg-white text-black"><i class="las la-minus fs-15"></i></button>
+                                        <input type="number" class="qty text-center" step="1" min="0" max="9999" value="1">
+                                        <button class="plus bg-white text-black"><i class="las la-plus fs-15"></i></button>
+                                    </div>
+                                    <div class="cart-price">
+                                        <ins class="text-decoration-none fw-500">$40.00</ins>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="cart-popup-item border-top border-whisper py-3 py-lg-30 d-flex">
+                            <img src="images/mini-cart-item1.jpg" alt="..." class="me-3 me-lg-30">
+                            <div>
+                                <p class="text-woodsmoke">Funny Shorts with Mesh Lining Swimwear Bathing Suits</p>
+                                <p class="fs-15 text-woodsmoke fw-bold">XL / Black</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="quantity d-flex">
+                                        <button class="minus bg-white text-black"><i class="las la-minus fs-15"></i></button>
+                                        <input type="number" class="qty text-center" step="1" min="0" max="9999" value="1">
+                                        <button class="plus bg-white text-black"><i class="las la-plus fs-15"></i></button>
+                                    </div>
+                                    <div class="cart-price">
+                                        <ins class="text-decoration-none fw-500">$40.00</ins>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="cart-popup-item border-top border-whisper py-3 py-lg-30 d-flex">
+                            <img src="images/mini-cart-item2.jpg" alt="..." class="me-3 me-lg-30">
+                            <div>
+                                <p class="text-woodsmoke">Funny Shorts with Mesh Lining Swimwear Bathing Suits</p>
+                                <p class="fs-15 text-woodsmoke fw-bold">XL / Black</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="quantity d-flex">
+                                        <button class="minus bg-white text-black"><i class="las la-minus fs-15"></i></button>
+                                        <input type="number" class="qty text-center" step="1" min="0" max="9999" value="1">
+                                        <button class="plus bg-white text-black"><i class="las la-plus fs-15"></i></button>
+                                    </div>
+                                    <div class="cart-price">
+                                        <!-- <del>$60.00</del> -->
+                                        <ins class="text-decoration-none fw-500">$40.00</ins>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                <div class="cart-popup-footer bg-gray p-3 p-lg-30">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <p class="mb-0 text-woodsmoke">Sub-total</p>
+                        <h5 class="fw-600 mb-0">$600</h5>
+                    </div>
+                    <p class="text-dove">Shipping, taxes, and discounts codes calculated at checkout.</p>
+                    <button class="btn btn-black rounded-0 w-100 btn-custom fs-14 mb-3">PROCEED TO CHECKOUT</button>
+                    <div class="text-center">
+                        <a href="#" class="text-black">View Cart</a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cart popup end -->
+
+    <!-- search start -->
+    <div class="search-wrapper py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="input-group d-flex justify-content-center search-group">
+                        <input type="text"
+                            class="form-control border-0 rounded-0 px-0"
+                            placeholder="Search...">
+                        <button class="btn btn-transparent rounded-0 p-0 px-lg-3 mb-n1"><i
+                                class="las la-search fs-24"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- search end -->
+
+    <!-- header start -->
+    <header class="header">
+        <div class="header-top bg-gray">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <address class="text-dove mb-0">337 Roncesvalles Ave, Toronto</address>
+                    <div class="currencies">
+                        <div class="dropdown effect">
+                            <a href="#" class="text-decoration-none text-dove d-inline-block currency-flag--usd active"
+                                data-bs-toggle="dropdown">
+                                <span>USD</span>
+                                <i class="las la-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu end-0 bg-gray border-0">
+                                <li>
+                                    <a href="#"
+                                        class="dropdown-item text-decoration-none text-dove d-inline-block currency-flag--aud">
+                                        <span>AUD</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="dropdown-item text-decoration-none text-dove d-inline-block currency-flag--cad">
+                                        <span>CAD</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="dropdown-item text-decoration-none text-dove d-inline-block currency-flag--dkk">
+                                        <span>DKK</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="dropdown-item text-decoration-none text-dove d-inline-block currency-flag--eur">
+                                        <span>EUR</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="dropdown-item text-decoration-none text-dove d-inline-block currency-flag--gbp">
+                                        <span>GBP</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="dropdown-item text-decoration-none text-dove d-inline-block currency-flag--hkd">
+                                        <span>HKD</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="dropdown-item text-decoration-none text-dove d-inline-block currency-flag--jpy">
+                                        <span>JPY</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="dropdown-item text-decoration-none text-dove d-inline-block currency-flag--nzd">
+                                        <span>NZD</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="dropdown-item text-decoration-none text-dove d-inline-block currency-flag--sgd">
+                                        <span>SGD</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="dropdown-item text-decoration-none text-dove d-inline-block currency-flag--usd selected">
+                                        <span>SGD</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-middle py-2 py-lg-0">
+            <div class="container">
+                <div class="row align-items-center h-100 justify-content-between position-relative gx-0">
+                    <div class="col col-lg-5">
+                        <div class="header-menu-left">
+                            <ul class="list-unstyled mb-0 d-flex d-xl-none">
+                                <li>
+                                    <a href="javascript:void(0)" class="push-menu text-reset"><i class="las la-bars"></i></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="push-search text-reset text-decoration-none position-relative">
+                                        <i class="las la-search"></i>
+                                        <i class="las la-times position-absolute start-50 top-50 translate-middle"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- navbar start -->
+                        <nav class="navbar-nav navbar-expand-xl" id="mynavbar">
+                            <div class="collapse navbar-collapse">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item dropdown mega-dropdown-main">
+                                        <a class="nav-link text-black" href="#" data-bs-toggle="dropdown">Shop</a>
+                                        <div class="dropdown-menu mega-dropdown rounded-0">
+                                            <div class="row row-cols-auto justify-content-between gx-0">
+                                                <div class="col">
+                                                    <img src="images/menu-item1.png" alt="..." class="mb-4 img-fluid">
+                                                    <h6 class="mb-4 fw-600">JEANS</h6>
+                                                    <ul class="list-unstyled">
+                                                        <li class="mb-3"><a class="text-dove text-decoration-none" href="#">Skinny Jeans</a></li>
+                                                        <li class="mb-3"><a class="text-dove text-decoration-none" href="#">Spray On Jeans</a></li>
+                                                        <li class="mb-3"><a class="text-dove text-decoration-none" href="#">Slim jeans</a></li>
+                                                        <li class="mb-3"><a class="text-dove text-decoration-none" href="#">Relaxed Jeans</a></li>
+                                                        <li class="mb-3"><a class="text-black" href="#">Shop All</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col">
+                                                    <img src="images/menu-item2.png" alt="..." class="mb-4 img-fluid">
+                                                    <h6 class="mb-4 fw-600">SHIRTS</h6>
+                                                    <ul class="list-unstyled">
+                                                        <li class="mb-3"><a class="text-dove text-decoration-none" href="#">T-Shirts</a></li>
+                                                        <li class="mb-3"><a class="text-dove text-decoration-none" href="#">Polos</a></li>
+                                                        <li class="mb-3"><a class="text-dove text-decoration-none" href="#">Sweatshirts</a></li>
+                                                        <li class="mb-3"><a class="text-dove text-decoration-none" href="#">Blazers</a></li>
+                                                        <li class="mb-3"><a class="text-black" href="#">Shop All</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col">
+                                                    <img src="images/menu-item3.png" alt="..." class="mb-4 img-fluid">
+                                                    <h6 class="mb-4 fw-600">FOOTWEARS</h6>
+                                                    <ul class="list-unstyled">
+                                                        <li class="mb-3"><a class="text-dove text-decoration-none" href="#">Sneakers</a></li>
+                                                        <li class="mb-3"><a class="text-dove text-decoration-none" href="#">Boots</a></li>
+                                                        <li class="mb-3"><a class="text-dove text-decoration-none" href="#">Loafers</a></li>
+                                                        <li class="mb-3"><a class="text-dove text-decoration-none" href="#">Sandals</a></li>
+                                                        <li class="mb-3"><a class="text-black" href="#">Shop All</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col">
+                                                    <img src="images/menu-banner1.png" alt="..." class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown mega-dropdown-main">
+                                        <a class="nav-link text-black" href="#" data-bs-toggle="dropdown">New Arrivals</a>
+                                        <div class="dropdown-menu mega-dropdown rounded-0">
+                                            <div class="row row-cols-auto justify-content-between gx-0">
+                                                <div class="col">
+                                                    <img src="images/menu-item1.png" alt="..." class="mb-4 img-fluid">
+                                                    <h6 class="mb-4 fw-600">JEANS</h6>
+                                                    <ul class="list-unstyled">
+                                                        <li class="mb-3"><a class="text-dove text-decoration-none" href="#">Skinny Jeans</a></li>
+                                                        <li class="mb-3"><a class="text-dove text-decoration-none" href="#">Spray On Jeans</a></li>
+                                                        <li class="mb-3"><a class="text-dove text-decoration-none" href="#">Slim jeans</a></li>
+                                                        <li class="mb-3"><a class="text-dove text-decoration-none" href="#">Relaxed Jeans</a></li>
+                                                        <li class="mb-3"><a class="text-black" href="#">Shop All</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col">
+                                                    <img src="images/menu-item2.png" alt="..." class="mb-4 img-fluid">
+                                                    <h6 class="mb-4 fw-600">SHIRTS</h6>
+                                                    <ul class="list-unstyled">
+                                                        <li class="mb-3"><a class="text-dove text-decoration-none" href="#">T-Shirts</a></li>
+                                                        <li class="mb-3"><a class="text-dove text-decoration-none" href="#">Polos</a></li>
+                                                        <li class="mb-3"><a class="text-dove text-decoration-none" href="#">Sweatshirts</a></li>
+                                                        <li class="mb-3"><a class="text-dove text-decoration-none" href="#">Blazers</a></li>
+                                                        <li class="mb-3"><a class="text-black" href="#">Shop All</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col">
+                                                    <img src="images/menu-item3.png" alt="..." class="mb-4 img-fluid">
+                                                    <h6 class="mb-4 fw-600">FOOTWEARS</h6>
+                                                    <ul class="list-unstyled">
+                                                        <li class="mb-3"><a class="text-dove text-decoration-none" href="#">Sneakers</a></li>
+                                                        <li class="mb-3"><a class="text-dove text-decoration-none" href="#">Boots</a></li>
+                                                        <li class="mb-3"><a class="text-dove text-decoration-none" href="#">Loafers</a></li>
+                                                        <li class="mb-3"><a class="text-dove text-decoration-none" href="#">Sandals</a></li>
+                                                        <li class="mb-3"><a class="text-black" href="#">Shop All</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col">
+                                                    <img src="images/menu-banner1.png" alt="..." class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link text-black">Best Sellers</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link text-black">Pages</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- navbar end -->
+                    </div>
+                    <div class="col col-lg-2 text-center">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="col col-lg-5">
+                        <div class="header-menu">
+                            <ul class="list-unstyled mb-0 d-flex justify-content-end">
+                                <li class="d-none d-lg-flex align-items-center justify-content-center">
+                                    <div class="input-group d-flex justify-content-center search-group">
+                                        <button class="btn btn-transparent rounded-0 p-0 px-lg-3 mb-n1"><i
+                                                class="las la-search"></i></button>
+                                        <input type="text"
+                                            class="form-control border-0 rounded-0 px-0 d-none d-lg-block"
+                                            placeholder="Search...">
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-reset text-decoration-none w-100 h-100 d-flex align-items-center justify-content-center push-cart">
+                                        <i class="las la-shopping-bag position-relative">
+                                            <span class="cart-count rounded-circle">2</span>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="text-reset text-decoration-none w-100 h-100 d-flex align-items-center justify-content-center"><i
+                                            class="las la-user"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="header-bottom bg-black">
+            <div class="container text-center">
+                <p class="text-light mb-0">COVID 19 UPDATE: WORLDWIDE FREESHIP 🚀</p>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- breadcrumb start -->
+    <nav class="container">
+        <ol class="breadcrumb mb-0 py-13">
+          <li class="breadcrumb-item"><a class="text-decoration-none text-reset" href="#">Home</a></li>
+          <li class="breadcrumb-item active">Collection</li>
+        </ol>
+    </nav>
+    <!-- breadcrumb end -->
+
+    <!-- collection banner start -->
+    <section class="collection-banner">
+        <div class="position-relative">
+            <div class="banner-image">
+                <img src="./images/collection-banner.png" alt="" class="w-100 h-100">
+            </div>
+            <div class="banner-desc position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                <div class="desc-inner text-center">
+                    <div class="text-effect">
+                        <h2 class="fst-italic mb-0" data-text="BUY 1 GET 1">BUY 1 GET 1</h2>
+                    </div>
+                    <h3 class="fst-italic fw-900 mb-4 mb-lg-40">AUTUMN JACKET</h3>
+                    <a href="#" class="btn btn-default px-lg-40 rounded-0">SHOP NOW</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- colleciton banner end -->
+
+    <!-- collection start -->
+    <section class="collection pt-4 pt-lg-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <aside class="filterbar">
+                        <div class="filterbar-inner">
+                            <h3 class="text-dark fw-600 mb-3 mb-lg-30">Filter</h3>
+                            <div class="filter-widget mb-3 mb-lg-32">
+                                <div class="widget-title">
+                                    <h6 class="fw-600 text-dark mb-lg-3">CATEGORIES</h6>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="list-unstyled filter-categories mb-0">
+                                        <li class="mb-2 mb-lg-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="categories" id="Jeans">
+                                                <label class="form-check-label" for="Jeans">
+                                                    Jeans
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="mb-2 mb-lg-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="categories" id="Shirts" checked>
+                                                <label class="form-check-label" for="Shirts">
+                                                    Shirts
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="mb-2 mb-lg-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="categories" id="Footwear">
+                                                <label class="form-check-label" for="Footwear">
+                                                    Footwear
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="categories" id="Tops">
+                                                <label class="form-check-label" for="Tops">
+                                                    Tops
+                                                </label>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="filter-widget mb-3 mb-lg-32">
+                                <div class="widget-title">
+                                    <h6 class="fw-600 text-dark mb-lg-3">BRAND</h6>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="list-unstyled filter-brand mb-0">
+                                        <li class="mb-2 mb-lg-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="brand" id="Nike">
+                                                <label class="form-check-label" for="Nike">
+                                                    Nike
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="mb-2 mb-lg-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="brand" id="Adidas">
+                                                <label class="form-check-label" for="Adidas">
+                                                    Adidas
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="mb-2 mb-lg-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="brand" id="Gucci">
+                                                <label class="form-check-label" for="Gucci">
+                                                    Gucci
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="brand" id="Levi’s">
+                                                <label class="form-check-label" for="Levi’s">
+                                                    Levi’s
+                                                </label>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="filter-widget mb-3 mb-lg-32">
+                                <div class="widget-title">
+                                    <h6 class="fw-600 text-dark mb-lg-3">COLOR</h6>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="list-unstyled filter-color mb-0">
+                                        <li class="mb-2 mb-lg-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="color" id="Beige">
+                                                <label class="form-check-label" for="Beige">
+                                                    Beige
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="mb-2 mb-lg-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="color" id="Black" checked>
+                                                <label class="form-check-label" for="Black">
+                                                    Black
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="mb-2 mb-lg-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="color" id="Blue">
+                                                <label class="form-check-label" for="Blue">
+                                                    Blue
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="color" id="Brown">
+                                                <label class="form-check-label" for="Brown">
+                                                    Brown
+                                                </label>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </aside>
+                </div>
+                <div class="col-lg-9">
+                    <div class="shop-listing">
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+     <!-- footer start -->
+    <section class="footer">
+        <div class="bg-gray py-5 py-lg-60">
+            <div class="container-lg">
+                <div class="row row-cols-1 row-cols-lg-4 justify-content-lg-between footer-collapse" id="accFooter">
+                    <div class="col menu-open">
+                        <a href="#linklist1"
+                            class="text-dark mb-4 text-decoration-none h6 d-flex align-items-center justify-content-between link-title"
+                            data-bs-toggle="collapse">
+                            HELP
+                            <span class="right-arrow d-lg-none rounded-8"><i class="las la-angle-down"></i></span>
+                        </a>
+                        <div class="collapse show" id="linklist1" data-bs-parent="#accFooter">
+                            <ul class="list-unstyled footerLink">
+                                <li><a href="#" class="text-decoration-none">Shipping & Returns</a></li>
+                                <li><a href="#" class="text-decoration-none">Track Your Order</a></li>
+                                <li><a href="#" class="text-decoration-none">Store Finder</a></li>
+                                <li><a href="#" class="text-decoration-none">FAQs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#linklist2"
+                            class="text-dark mb-4 text-decoration-none h6 d-flex align-items-center justify-content-between link-title"
+                            data-bs-toggle="collapse">
+                            ABOUT
+                            <span class="right-arrow d-lg-none rounded-8"><i class="las la-angle-down"></i></span>
+                        </a>
+                        <div class="collapse" id="linklist2" data-bs-parent="#accFooter">
+                            <ul class="list-unstyled footerLink">
+                                <li><a href="#" class="text-decoration-none">About Us</a></li>
+                                <li><a href="#" class="text-decoration-none">Contact Us</a></li>
+                                <li><a href="#" class="text-decoration-none">Careers</a></li>
+                                <li><a href="#" class="text-decoration-none">Become an Affiliate</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#linklist3"
+                            class="text-dark mb-4 text-decoration-none h6 d-flex align-items-center justify-content-between link-title"
+                            data-bs-toggle="collapse">
+                            CATEGORIES
+                            <span class="right-arrow d-lg-none rounded-8"><i class="las la-angle-down"></i></span>
+                        </a>
+                        <div class="collapse" id="linklist3" data-bs-parent="#accFooter">
+                            <ul class="list-unstyled footerLink">
+                                <li><a href="#" class="text-decoration-none">Shirts</a></li>
+                                <li><a href="#" class="text-decoration-none">Jeans</a></li>
+                                <li><a href="#" class="text-decoration-none">Footwear</a></li>
+                                <li><a href="#" class="text-decoration-none">Accessories</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h6 class="text-dark mb-3 text-decoration-none d-flex align-items-center justify-content-between link-title">
+                            JOIN THE LIST AND RECEIVE 15% OFF YOUR FIRST ORDER
+                        </h6>
+                        <div class="subscribe input-group border border-whisper border-2 mb-4">
+                            <input type="text" class="form-control rounded-0 border-0 py-11" placeholder="Your Email">
+                            <button class="btn bg-white text-decoration-none text-dark fw-500 rounded-0">SEND</button>
+                        </div>
+                        <ul class="list-inline social mb-0">
+                            <li class="list-inline-item"><a class="text-decoration-none text-dove" href="#"><i class="lab la-facebook-f"></i></a></li>
+                            <li class="list-inline-item"><a class="text-decoration-none text-dove" href="#"><i class="lab la-instagram"></i></i></a></li>
+                            <li class="list-inline-item"><a class="text-decoration-none text-dove" href="#"><i class="lab la-pinterest-p"></i></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white">
+            <div class="container-lg">
+                <div class="d-flex flex-column flex-lg-row justify-content-lg-between text-center align-items-center py-21">
+                    <ul class="footer-list list-inline mb-lg-0">
+                        <li class="list-inline-item border-end border-whisper pe-3"><a class="text-decoration-none text-dove" href="#">© Uniso 2020. All Rights Reserved</a></li>
+                        <li class="list-inline-item border-end border-whisper pe-3"><a class="text-decoration-none text-dove" href="#">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a class="text-decoration-none text-dove" href="#">Terms & Conditions</a></li>
+                    </ul>
+                    <img src="images/payment-methods.png" alt="..." class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer end -->
+
+    <!-- bootstrap js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- swiper -->
+    <script src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- custom theme js -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>

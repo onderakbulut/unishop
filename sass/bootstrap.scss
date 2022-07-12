@@ -1,0 +1,7 @@
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+.btn-check:focus + .btn, .btn:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow:unset;
+}

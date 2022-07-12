@@ -1,0 +1,61 @@
+.mega-dropdown-main {
+  position: unset;
+}
+
+.mega-dropdown {
+  padding: 0;
+  width: 100%;
+  border-color:#EEEEEE;
+}
+.mega-dropdown ul > li > a:hover {
+  color:inherit;
+}
+
+.mega-list {
+  padding: 0 0 19px 0;
+}
+
+.mega-list a {
+  display: inline-block;
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  color: #262F38;
+  padding: 4px 0;
+  -webkit-transition: all 0.45s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  transition: all 0.45s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  text-decoration: none;
+}
+
+.mega-list a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 992px) {
+  #mynavbar .dropdown-menu {
+    -webkit-transform: translateY(15px) translateZ(0);
+            transform: translateY(15px) translateZ(0);
+    transition: opacity .2s ease, visibility .2s ease, transform .2s ease, -webkit-transform .2s ease;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    display: block;
+    left: 0;
+    padding:30px;
+  }
+  #mynavbar .dropdown:hover > .dropdown-menu {
+    -webkit-transform: none;
+            transform: none;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    margin-top:-1px;
+  }
+  #mynavbar .dropdown > .nav-link:active {
+    pointer-events: none;
+  }
+  .dropdown-menu {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=megamenu.css.map */
