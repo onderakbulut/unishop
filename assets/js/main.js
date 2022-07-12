@@ -253,6 +253,28 @@ jQuery(function() {
 	});
 	/* footer end */
 
-	
+	/* filterbar start */
+	body.on("click", ".filter-toggler",function(e){
+        openFilter();
+		e.preventDefault();
+		e.stopPropagation();
+    });
+    body.on("click", ".mask-overlay",function(e){
+        closeFilter();
+    });
+    body.on("click", ".close-filter",function(e){
+        closeFilter();
+    });
+
+    openFilter = function () {
+        $(".filterbar").addClass("show");
+        $(".mask-overlay").addClass("show");
+		body.addClass("overflow-hidden");
+    }
+    closeFilter = function () {
+        $(".filterbar").removeClass("show");
+        $(".mask-overlay").removeClass("show");
+		body.removeClass("overflow-hidden");
+    }
     
 });

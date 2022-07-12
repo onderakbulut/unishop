@@ -50,6 +50,12 @@
 
 /*  Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {  
+    .fs-lg-40 {
+        font-size:40px;
+    }
+    .short-by .form-select {
+        padding:11px 107px 11px 16px;
+    }
     .footer [data-bs-toggle] {
 		pointer-events: none;
 	}
@@ -88,6 +94,9 @@
     }
     .pt-lg-80 {
         padding-top: 80px!important;
+    }
+    .mb-lg-20 {
+        margin-bottom:20px!important;
     }
     .mb-lg-30 {
         margin-bottom:30px!important;
@@ -180,6 +189,36 @@
 
 /*  `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {  
+    aside.filterbar {
+        position:fixed;
+        z-index: 1052;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-color:#fff;
+        height:100%;
+        width:300px;
+        transform:translateX(-100%);
+        transition:transform .2s;
+    }
+    .filter-widget {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .filterbar-inner {
+        height:calc(100% - 50px);
+        overflow-y: auto;
+        padding-top:16px;
+    }
+    .filterbar.show {
+        transform:translate(0,0);
+    }
+    .filter-title {
+        padding:10px 16px;
+        background-color: var(--dark);
+        color:#fff;
+    }
     .header-menu > ul > li {
         padding:6px;
     }

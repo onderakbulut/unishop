@@ -2,6 +2,8 @@
 
 .btn-check:focus + .btn, .btn:focus,
 .form-control:focus,
-.form-check-input:focus {
+.form-check-input:focus,
+.form-select:focus,
+.page-link:focus {
     box-shadow:unset;
 }
