@@ -12683,4 +12683,9 @@ fieldset:disabled .btn {
   -webkit-box-shadow: unset;
           box-shadow: unset;
 }
+
+.btn-dark {
+  background-color: #000000;
+  border-color: #000000;
+}
 /*# sourceMappingURL=bootstrap.css.map */

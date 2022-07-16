@@ -22,7 +22,9 @@
     <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
     <!-- animate css -->
     <link rel="stylesheet" href="./assets/plugins/animate.min.css">
-    
+    <!-- fancybox -->
+    <link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.css">
+
     <!-- custom theme css -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -463,7 +465,7 @@
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="text-reset text-decoration-none w-100 h-100 d-flex align-items-center justify-content-center"><i
+                                        class="text-reset text-decoration-none w-100 h-100  d-flex align-items-center justify-content-center"><i
                                             class="las la-user"></i></a>
                                 </li>
                             </ul>
@@ -481,133 +483,241 @@
     </header>
     <!-- header end -->
 
-    <!-- home slider start -->
-    <section class="home-slider">
-        <div class="swiper homeSlider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="slider-text">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xl-8 col-xxl-6">
-                                    <div class="slider-title mb-2 mb-lg-4">
-                                        <h1 class="animate__animated animate__faster mb-0" data-animation="animate__fadeInUp">
-                                            Autumn’s Coming...
-                                        </h1>
-                                    </div>	
-                                    <div class="slider-desc mb-3 mb-lg-40">
-                                        <p class="animate__animated animate__fast mb-0" data-animation="animate__fadeInUp">We started with humble beginnings — selling out of our basement and frantically shipping orders as soon as we woke up. </p>
-                                    </div>
-                                    <div>
-                                        <a href="#" class="btn btn-default py-lg-10 px-lg-40 rounded-0 animate__animated animate__fast" data-animation="animate__fadeInUp">SHOP NOW</a>
-                                    </div>	
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-image" style="background-image: url(images/slider-01.jpg);"></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slider-text">
-                        <div class="container animate__animated" data-animation="animate__fadeInRight">
-                            <div class="row justify-content-end">
-                                <div class="col-xl-8 col-xxl-6">
-                                    <div class="slider-title mb-2 mb-lg-4">
-                                        <h1 class=" mb-0" ">
-                                            Autumn’s Coming...
-                                        </h1>
-                                    </div>	
-                                    <div class="slider-desc mb-3 mb-lg-40">
-                                        <p class="mb-0">We started with humble beginnings — selling out of our basement and frantically shipping orders as soon as we woke up. </p>
-                                    </div>
-                                    <div>
-                                        <a href="#" class="btn btn-default py-lg-10 px-lg-40 rounded-0">SHOP NOW</a>
-                                    </div>	
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-image" style="background-image: url(images/slider-02.jpg);"></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slider-text">
-                        <div class="container animate__animated" data-animation="animate__fadeInLeft">
-                            <div class="row">
-                                <div class="col-xl-8 col-xxl-6">
-                                    <div class="slider-title mb-2 mb-lg-4">
-                                        <h1 class=" mb-0" ">
-                                            Autumn’s Coming...
-                                        </h1>
-                                    </div>	
-                                    <div class="slider-desc mb-3 mb-lg-40">
-                                        <p class="mb-0">We started with humble beginnings — selling out of our basement and frantically shipping orders as soon as we woke up. </p>
-                                    </div>
-                                    <div>
-                                        <a href="#" class="btn btn-default py-lg-10 px-lg-40 rounded-0">SHOP NOW</a>
-                                    </div>	
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-image" style="background-image: url(images/slider-03.jpg);"></div>
-                </div>
+    <!-- breadcrumb start -->
+    <nav class="container">
+        <ol class="breadcrumb mb-0 py-13">
+          <li class="breadcrumb-item"><a class="text-decoration-none text-reset" href="#">Home</a></li>
+          <li class="breadcrumb-item"><a class="text-decoration-none text-reset" href="#">Men</a></li>
+          <li class="breadcrumb-item active">Under Armour Training Stertch Woven Half Zip Jacket</li>
+        </ol>
+    </nav>
+    <!-- breadcrumb end -->
 
+    <!-- product single start -->
+    <section class="product-single pt-lg-4 mb-5 mb-lg-80">
+        <div class="container">
+            <div class="row mb-4 mb-lg-60">
+                <div class="col-md-7 mb-3 mb-lg-0">
+                    <div class="product-left">
+                        <div class="row">
+                            <div class="col-12 col-xl-auto order-2 order-xl-1 thumb-left">
+                                <div class="swiper product-thumbs">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="images/product-single/detail1.jpeg" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/product-single/detail2.jpeg" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/product-single/detail3.jpeg" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/product-single/detail4.jpeg" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="play-icon" src="./images/product-single/play-icon.svg" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/product-single/detail5.jpeg" alt="...">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/product-single/detail6.jpeg" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl order-1 order-xl-2 mb-1 mb-xl-0 thumb-right">
+                                <div class="swiper product-gallery">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide" data-fancybox="gallery" data-src="./images/product-single/detail1-big.jpeg">
+                                            <img src="images/product-single/detail1.jpeg" alt="..."  class="img-fluid">
+                                        </div>
+                                        <div class="swiper-slide" data-fancybox="gallery" data-src="./images/product-single/detail2-big.jpeg">
+                                            <img src="images/product-single/detail2.jpeg" alt="..."  class="img-fluid">
+                                        </div>
+                                        <div class="swiper-slide" data-fancybox="gallery" data-src="./images/product-single/detail3-big.jpeg">
+                                            <img src="images/product-single/detail3.jpeg" alt="..."  class="img-fluid">
+                                        </div>
+                                        <div class="swiper-slide" data-fancybox="gallery" data-src="./images/product-single/detail4-big.jpeg">
+                                            <img src="images/product-single/detail4.jpeg" alt="..."  class="img-fluid">
+                                        </div>
+                                        <div class="swiper-slide" data-fancybox="gallery" data-type="iframe" data-src="https://www.youtube.com/embed/dvW81bvexh8?controls=1&enablejsapi=1&modestbranding=1&playsinline=1&rel=0">
+                                            <div class="position-relative" style="aspect-ratio: 3 / 4;">
+                                                <iframe class="position-absolute start-0 top-0 end-0 bottom-0 w-100 h-100" src="https://www.youtube.com/embed/dvW81bvexh8?controls=1&enablejsapi=1&modestbranding=1&playsinline=1&rel=0" frameborder="0"></iframe>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-fancybox="gallery" data-src="./images/product-single/detail5-big.jpeg">
+                                            <img src="images/product-single/detail5.jpeg" alt="..."  class="img-fluid">
+                                        </div>
+                                        <div class="swiper-slide" data-fancybox="gallery" data-src="./images/product-single/detail6-big.jpeg">
+                                            <img src="images/product-single/detail6.jpeg" alt="..."  class="img-fluid">
+                                        </div>
+                                     
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <button class="btn btn-zoom"><i class="las la-expand-arrows-alt"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="product-info ps-xl-33 d-flex flex-column h-100">
+                        <h4 class="fw-400 lh-lg-36 mb-lg-3">Under Armour Training Stretch Woven Half Zip Jacket.</h4>
+                        <div class="rating d-flex mb-12">
+                            <div class="stars me-12">
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star text-mercury"></i>
+                            </div>
+                            <span class="text-dove">16 Reviews</span>
+                        </div>
+                        <div class="single-price mb-2 mb-lg-4">
+                            <span class="price h4">$200</span>
+                        </div>
+                        <div class="variants mb-3 mb-lg-32">
+                            <div class="swatch mb-3 mb-lg-4">
+                                <div class="swatch-title mb-2">
+                                    <span class="fw-600 me-12">COLOR</span>
+                                    <span class="text-dove active-color">White</span>
+                                </div>
+                                <ul class="select-swatch list-inline mb-0">
+                                    <li class="list-inline-item" data-color="Blue"><span class="swatch-value" style="background-color:#1B2248"></span></li>
+                                    <li class="list-inline-item active" data-color="White"><span class="swatch-value" style="background-color:#ffffff"></span></li>
+                                    <li class="list-inline-item" data-color="Gray"><span class="swatch-value" style="background-color:#EEEEEE"></span></li>
+                                    <li class="list-inline-item" data-color="Red"><span class="swatch-value" style="background-color:#9F0B0B"></span></li>
+                                </ul>
+                            </div>
+                            <div class="size mb-3 mb-lg-4">
+                                <div class="size-title mb-2 d-flex justify-content-between">
+                                    <div>
+                                        <span class="fw-600 me-12">SIZE</span>
+                                        <span class="text-dove active-size">S</span>
+                                    </div>
+                                    <a class="text-dark" href="#">Size Guide</a>
+                                </div>
+                                <ul class="select-size list-inline mb-0">
+                                    <li class="list-inline-item active" data-size="S"><span class="size-value">S</span></li>
+                                    <li class="list-inline-item" data-size="M"><span class="size-value">M</span></li>
+                                    <li class="list-inline-item" data-size="L"><span class="size-value">L</span></li>
+                                    <li class="list-inline-item" data-size="XL"><span class="size-value">XL</span></li>
+                                    <li class="list-inline-item" data-size="2XL"><span class="size-value">2XL</span></li>
+                                </ul>
+                            </div>
+                            <div class="single-quantity">
+                                <div class="quantity-title mb-2">
+                                    <span class="fw-600 me-12">QUANTITY</span>
+                                </div>
+                                <div class="quantity d-flex">
+                                    <button class="minus bg-white text-black"><i class="las la-minus fs-15"></i></button>
+                                    <input type="number" class="qty text-center" step="1" min="0" max="9999" value="1">
+                                    <button class="plus bg-white text-black"><i class="las la-plus fs-15"></i></button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="btn btn-dark py-lg-15 px-lg-40 rounded-0 w-100 fs-15 add-to-bag fw-600 mb-2 border-2">ADD TO BAG</a>
+                            <a href="#" class="btn btn-default py-lg-15 px-lg-40 rounded-0 w-100 fs-15 buy-now fw-600">BUY NOW</a>
+                        </div>
+                        <ul class="list-inline d-flex justify-content-evenly mb-lg-2">
+                            <li class="list-inline-item"><a class="text-dark text-decoration-none" href="#"><i class="lar la-heart"></i><span class="ms-2 fs-14 fw-600"> ADD TO WISHLIST</span></a></li>
+                            <li class="list-inline-item"><a class="text-dark text-decoration-none" href="#"><i class="las la-random"></i></i><span class="ms-2 fs-14 fw-600"> COMPARE</span></a></li>
+                        </ul>
+                        <div class="product-meta mt-auto">
+                            <ul class="list-unstyled mb-0 fs-14">
+                                <li class="mb-2"><span class="text-dove">SKU:</span> <span class="fw-600">051</span></li>
+                                <li class="mb-2"><span class="text-dove">CATEGORY:</span> <span class="fw-600">T-Shirts</span></li>
+                                <li><span class="text-dove">TAGS:</span> <span class="fw-600">Shirt, Men</span></li>
+                            </ul>                            
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev d-none d-xl-flex"></div>
-            <div class="swiper-button-next d-none d-xl-flex"></div>
+            <div class="row justify-content-lg-center gx-lg-0">
+                <div class="col-12 col-xl-10">
+                    <ul class="nav nav-tabs detail-tabs border-0 flex-nowrap overflow-auto text-nowrap" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <button class="nav-link border-0 rounded-0 fw-600 py-3 mb-0 px-lg-40 active" data-bs-toggle="tab" data-bs-target="#desc" type="button">DESCRIPTION</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link border-0 rounded-0 fw-600 py-3 mb-0 px-lg-40" data-bs-toggle="tab" data-bs-target="#feature" type="button">FEATURE & DETAILS</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link border-0 rounded-0 fw-600 py-3 mb-0 px-lg-40" data-bs-toggle="tab" data-bs-target="#shipping" type="button">SHIPPING & RETURNS</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link border-0 rounded-0 fw-600 py-3 mb-0 px-lg-40" data-bs-toggle="tab" data-bs-target="#review" type="button">REVIEWS</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content p-3 p-lg-40 bg-gray" id="myTabContent">
+                        <div class="tab-pane fade show active" id="desc" tabindex="0">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </div>
+                        <div class="tab-pane fade" id="feature" tabindex="0">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Color</th>
+                                        <td><p class="mb-0">Grey, Pink, Black</p></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Size</th>
+                                        <td><p class="mb-0">S, M, L</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="shipping" tabindex="0">
+                            <h5>Free FedEx 2-Day Shipping</h5>
+                            <p>Free FedEx 2-Day Shipping is available exclusively to the U.S. on orders over $150. FedEx 2-Day packages are delivered Monday through Friday.</p>
+
+                            <h5>Free FedEx Ground Shipping</h5>
+                            <p>Free FedEx Ground Shipping is available exclusively to U.S. orders over $100.</p>
+
+                            <h5>Free Returns</h5>
+                            <p>Free returns are available on all U.S. order within 14 days of shipment.</p>
+
+                            <p class="fst-italic mb-0">*Free Shipping is not available with some promotions and other restrictions may apply.</p>
+                        </div>
+                        <div class="tab-pane fade" id="review" tabindex="0">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="flex-shrink-0">
+                                    <img src="./images/profile-1.png" alt="...">
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h6>Great services!</h6>
+                                    <p class="text-dove fs-14 mb-0">by <span class="text-dark">Zach</span> on 13 May, 2020</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <img src="./images/profile-2.png" alt="...">
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h6>Fast shipping & support. Love it!</h6>
+                                    <p class="text-dove fs-14 mb-0">by <span class="text-dark">Roze</span> on 13 May, 2020/p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
         </div>
     </section>
-    <!-- home slider end -->
-
-    <!-- home categories start -->
-    <section class="home-categories mb-4 mb-lg-80">
-        <div class="home-categories-inner row row-cols-sm-3 gx-0">
-            <div class="cat-item position-relative d-flex flex-column">
-                <div class="overflow-hidden">
-                    <div class="cat-image" style="background-image: url(images/home-collection-1.jpg)"></div>
-                </div> 
-                <div class="cat-name d-flex align-items-center justify-content-center text-center">
-                    <div>
-                        <h4>JEANS</h4>
-                        <p class="mb-0">Must have item</p>
-                    </div>
-                </div>
-                <a href="#" class="cat-link stretched-link"></a>
-            </div>
-            <div class="cat-item position-relative d-flex flex-column">
-                <div class="cat-name d-flex align-items-center justify-content-center text-center order-2 order-sm-1">
-                    <div>
-                        <h4>SHIRTS</h4>
-                        <p class="mb-0">Summer Vibe</p>
-                    </div>
-                </div>
-                <div class="overflow-hidden order-1 order-sm-2">
-                    <div class="cat-image" style="background-image: url(images/home-collection-2.jpg)"></div>
-                </div> 
-                <a href="#" class="cat-link stretched-link"></a>
-            </div>
-            <div class="cat-item position-relative d-flex flex-column">
-                <div class="overflow-hidden">
-                    <div class="cat-image" style="background-image: url(images/home-collection-3.jpg)"></div>
-                </div> 
-                <div class="cat-name d-flex align-items-center justify-content-center text-center">
-                    <div>
-                        <h4>FOOTWEAR</h4>
-                        <p class="mb-0">Take you to anywhere</p>
-                    </div>
-                </div>
-                <a href="#" class="cat-link stretched-link"></a>
-            </div>
-        </div>
-    </section>
-    <!-- home categories end -->
+    <!-- product single end -->
 
     <!-- product recommend start -->
     <section class="product-recommend container mb-4 mb-lg-80">
         <div class="text-center mb-4 mb-lg-40">
-            <h3 class="mb-4">Best Seller</h3>
-            <a href="#" class="btn py-lg-10 px-lg-40 btn-outline-light">VIEW ALL</a>
+            <h3 class="mb-4">Related Products</h3>
         </div> 
         <div class="product-slider swiper">
             <div class="swiper-wrapper mb-4 mb-lg-60">
@@ -703,211 +813,6 @@
         </div>
     </section>
     <!-- product recommend end -->
-
-    <!-- home banner start -->
-    <section class="home-banner mb-4 mb-lg-80">
-        <div class="container">
-            <div class="row mb-3 mb-lg-30">
-                <div class="col-12">
-                    <div class="banner-inner position-relative">
-                        <div class="banner-image overflow-hidden">
-                            <img src="images/home-banner-1.jpg" alt="..." class="img-fluid">
-                        </div>
-                        <div class="banner-desc position-absolute top-0 start-0 end-0 bottom-0">
-                            <div class="container-fluid h-100">
-                                <div class="row align-items-center justify-content-end h-100 text-end">
-                                    <div class="col-lg-8">
-                                        <h1 class="text-white mb-4 mb-lg-10">Autumn <br>
-                                            Collection <br>
-                                            2020</h1>
-                                        <a href="#" class="btn btn-default py-lg-10 px-lg-40 rounded-0 stretched-link">SHOP
-                                            THE COLLECTION</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 mb-3 mb-lg-0">
-                    <div class="banner-inner position-relative">
-                        <div class="banner-image overflow-hidden">
-                            <img src="images/home-banner-2.jpg" alt="..." class="img-fluid">
-                        </div>
-                        <div class="banner-desc position-absolute top-0 start-0 end-0 bottom-0">
-                            <div class="container-fluid h-100">
-                                <div class="row align-items-center justify-content-end h-100 text-end">
-                                    <div class="col-12">
-                                        <h3 class="text-dark">Classic Tee</h3>
-                                        <p>Enjoy the Summer</p>
-                                        <a href="#" class="btn btn-default py-lg-10 px-lg-40 rounded-0 stretched-link">SHOP T-SHIRTS</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="banner-inner position-relative">
-                        <div class="banner-image overflow-hidden">
-                            <img src="images/home-banner-3.jpg" alt="..." class="img-fluid">
-                        </div>
-                        <div class="banner-desc position-absolute top-0 start-0 end-0 bottom-0">
-                            <div class="container-fluid h-100">
-                                <div class="row align-items-center justify-content-end h-100 text-end">
-                                    <div class="col-12">
-                                        <img src="images/banner-logo.png" alt="..." class="mb-2">
-                                        <p>Shop Now. Enjoy Now. Pay Later.</p>
-                                        <a href="#" class="btn btn-default py-lg-10 px-lg-40 rounded-0 stretched-link">VIEW ALL ITEMS</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- home banner end -->
-
-    <!-- shopby start -->
-    <section class="shopby mb-4 mb-lg-80">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-center">
-                        <h3 class="mb-4  mb-4 mb-lg-40">Shop by</h3>
-                    </div> 
-                </div>
-            </div>
-            <div class="row row-cols-2 row-cols-md-4 row-cols-lg-5 justify-content-center">
-                <div class="col mb-3 mb-lg-0">
-                    <div class="banner-inner position-relative">
-                        <div class="banner-image overflow-hidden">
-                            <img src="images/shopby-1.jpg" alt="..." class="w-100">
-                        </div>
-                        <div class="banner-desc position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
-                            <a href="#" class="text-white mb-0 text-decoration-none h4 stretched-link">TANK</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-3 mb-lg-0">
-                    <div class="banner-inner position-relative">
-                        <div class="banner-image overflow-hidden">
-                            <img src="images/shopby-2.jpg" alt="..." class="w-100">
-                        </div>
-                        <div class="banner-desc position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
-                            <a href="#" class="text-white mb-0 text-decoration-none h4 stretched-link">SHORTS</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-3 mb-lg-0">
-                    <div class="banner-inner position-relative">
-                        <div class="banner-image overflow-hidden">
-                            <img src="images/shopby-3.jpg" alt="..." class="w-100">
-                        </div>
-                        <div class="banner-desc position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
-                            <a href="#" class="text-white mb-0 text-decoration-none h4 stretched-link">SHIRTS</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-3 mb-lg-0">
-                    <div class="banner-inner position-relative">
-                        <div class="banner-image overflow-hidden">
-                            <img src="images/shopby-4.jpg" alt="..." class="w-100">
-                        </div>
-                        <div class="banner-desc position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
-                            <a href="#" class="text-white mb-0 text-decoration-none h4 stretched-link">JEANS</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-3 mb-lg-0 d-none d-lg-block">
-                    <div class="banner-inner position-relative">
-                        <div class="banner-image overflow-hidden">
-                            <img src="images/shopby-5.jpg" alt="..." class="w-100">
-                        </div>
-                        <div class="banner-desc position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
-                            <a href="#" class="text-white mb-0 text-decoration-none h4 stretched-link">FOOTWEAR</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- shopby end -->
-
-    <!-- home desc -->
-    <section class="home-desc bg-gray py-5 py-lg-80 mb-4 mb-lg-80">
-        <div class="container">
-            <div class="row justify-content-center text-center">
-                <div class="col-lg-10">
-                    <h4>The best sets you'll ever wear — made in Ontario from locally-sourced merino wool
-                        Products provided by Uniso</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- home desc -->
-
-    <!-- latest blog start -->
-    <section class="latest-blog mb-4 mb-lg-80">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-center">
-                        <h3 class="mb-4 mb-lg-40">From the Journal</h3>
-                    </div> 
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="blog-slider swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <article class="col blog-post">
-                                    <div class="post-image overflow-hidden mb-3">
-                                        <a href="#"><img src="images/blog-1.jpg" alt="..." class="img-fluid"></a>
-                                    </div>
-                                    <div class="post-info text-center">
-                                        <p class="post-date text-dove mb-2">MAY 15, 2020</p>
-                                        <h5 class="fw-normal"><a class="text-reset text-decoration-none" href="#">Swim Jammers Endurance Long Racing Training Swimsuit</a></h5>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="swiper-slide">
-                                <article class="col blog-post">
-                                    <div class="post-image overflow-hidden mb-3">
-                                        <a href="#"><img src="images/blog-2.jpg" alt="..." class="img-fluid"></a>
-                                    </div>
-                                    <div class="post-info text-center">
-                                        <p class="post-date text-dove mb-2">MAY 15, 2020</p>
-                                        <h5 class="fw-normal"><a class="text-reset text-decoration-none" href="#">Swim Jammers Endurance Long Racing Training Swimsuit</a></h5>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="swiper-slide">
-                                <article class="col blog-post">
-                                    <div class="post-image overflow-hidden mb-3">
-                                        <a href="#"><img src="images/blog-3.jpg" alt="..." class="img-fluid"></a>
-                                    </div>
-                                    <div class="post-info text-center">
-                                        <p class="post-date text-dove mb-2">MAY 15, 2020</p>
-                                        <h5 class="fw-normal"><a class="text-reset text-decoration-none" href="#">Swim Jammers Endurance Long Racing Training Swimsuit</a></h5>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination position-relative bottom-0 mt-4 d-lg-none"></div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- latest blog end -->
 
     <!-- insta feed start -->
     <section class="insta-feed border-top border-whisper pt-4 pt-lg-80">
@@ -1045,7 +950,11 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- swiper -->
     <script src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
-    
+    <!-- fancybox -->
+    <script src="./assets/plugins/fancybox/fancybox.umd.js"></script>
+    <!-- zoom -->
+    <script src="./assets/plugins/jquery.zoom.js"></script>
+
     <!-- custom theme js -->
     <script src="./assets/js/main.js"></script>
 

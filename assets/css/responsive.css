@@ -50,6 +50,15 @@
 
 /*  Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {  
+
+    .product-gallery .swiper-button-next,
+    .product-gallery .swiper-button-prev {
+        opacity: 0;
+        transform: scale(.7);
+    }
+    .lh-lg-36 {
+        line-height: 36px;
+    }
     .fs-lg-40 {
         font-size:40px;
     }
@@ -66,6 +75,10 @@
         padding-top:10px!important;
         padding-bottom:10px!important;
     }
+    .py-lg-15 {
+        padding-top:15px!important;
+        padding-bottom:15px!important;
+    }
     .px-lg-40 {
         padding-left:40px!important;
         padding-right:40px!important;
@@ -75,6 +88,12 @@
     }
     .p-lg-30  {
         padding:30px!important;
+    }
+    .p-lg-40  {
+        padding:40px!important;
+    }
+    .ps-lg-33 {
+        padding-left:33px!important;
     }
     .px-lg-30  {
         padding-left:30px!important;
@@ -109,6 +128,9 @@
     }
     .mb-lg-40 {
         margin-bottom:40px!important;
+    }
+    .me-lg-40 {
+        margin-right:40px!important;
     }
     .mb-lg-60 {
         margin-bottom:60px!important;
@@ -154,7 +176,16 @@
 }
 
 /*  X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
+@media (min-width: 1200px) { 
+    .ps-xl-33 {
+        padding-left:33px!important;
+    } 
+    .thumb-left {
+        max-width: 95px;
+    }
+    .thumb-right {
+        max-width: calc(100% - 95px);
+    }
     .homeSlider .slider-image {
         padding-top: 680px;
     }
@@ -173,6 +204,9 @@
 
 /*  `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {  
+    .zoomImg {
+        display: none!important;
+    }
     .home-categories .cat-image {
         padding-bottom: 50%;
     }

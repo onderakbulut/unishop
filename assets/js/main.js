@@ -276,5 +276,108 @@ jQuery(function() {
         $(".mask-overlay").removeClass("show");
 		body.removeClass("overflow-hidden");
     }
-    
+	/* filterbar end */
+   
+	/* product single start */	
+	if($(".product-thumbs").length){
+		var productThumbs = new Swiper('.product-thumbs', {
+		
+			centeredSlides: false,
+			loop: true,
+			slideToClickedSlide: true,
+			watchSlidesProgress: true,
+			breakpoints: {
+				0: {
+					direction: 'horizontal',
+					spaceBetween: 4,
+					slidesPerView: 4,
+					loopedSlides: 4,
+				},
+				1200: {
+					direction: 'vertical',
+					slidesPerView: 5,
+					loopedSlides: 5,
+					spaceBetween: 0,
+				},
+				
+			}
+		});
+	}
+	if($(".product-gallery").length){
+		var productSlider = new Swiper('.product-gallery', {
+			spaceBetween: 0,
+			centeredSlides: false,
+			loop:true,
+			direction: 'horizontal',
+			loopedSlides: 5,
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+			resizeObserver:true,
+			thumbs: {
+				swiper: productThumbs
+			},
+			
+		});
+	}
+	$(".product-gallery .swiper-slide").each(function () {
+		let $this = $(this),
+			image = $this;
+		$this.zoom({
+			url: image.attr('data-src'),
+			touch: false,
+			on : 'mouseover',
+		});
+	});
+	$(".product-gallery .swiper-slide").on("click",function(e){
+		e.stopImmediatePropagation();
+	});
+	Fancybox.bind('[data-fancybox="gallery"]:not(.swiper-slide-duplicate)', {
+		Image: {
+			zoom: false,
+		},
+		showClass: "fancybox-zoomIn",
+		hideClass: "fancybox-zoomOut",
+		Toolbar: {
+			display: [
+				"zoom",
+				"fullscreen",
+				"thumbs",
+				"close",
+				"counter"
+			],
+		},
+		on: {
+			closing: (fancybox, slide) => {
+				var index = fancybox.getSlide().index;
+				productSlider.slideToLoop(index);
+			},
+		},
+	});
+	$(".btn-zoom").on("click",function(){
+		Fancybox.fromOpener('[data-fancybox="gallery"]:not(.swiper-slide-duplicate)', {
+			startIndex: productSlider.realIndex,
+		});
+	});
+	
+	$(".select-swatch > li").on("click",function(e){
+		e.preventDefault();
+		let $this = $(this);
+		$this.addClass('active').siblings().removeClass('active');
+		if ($this.data('color')) {
+			$this.closest('.swatch').find('span.active-color').text($this.data('color'));
+		}
+	});
+	$(".select-size > li").on("click",function(e){
+		e.preventDefault();
+		let $this = $(this);
+		$this.addClass('active').siblings().removeClass('active');
+		if ($this.data('size')) {
+			$this.closest('.size').find('span.active-size').text($this.data('size'));
+		}
+	});
+
 });
+
+
