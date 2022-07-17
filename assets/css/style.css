@@ -34,11 +34,18 @@ body {
     font-weight: 900;
 }
 
+.py-10 {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
 .py-11 {
     padding-top: 11px !important;
     padding-bottom: 11px !important;
 }
-
+.py-12 {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+}
 .py-13 {
     padding-top: 13px !important;
     padding-bottom: 13px !important;
@@ -171,6 +178,9 @@ body {
     background-color: #000;
     color: #fff !important;
 }
+.btn-whisper {
+    border-color:var(--whisper);
+}
 
 .color-box {
     width: 120px;
@@ -201,13 +211,13 @@ body {
 /* buttons start */
 .btn-default {
     background: #FFFFFF;
-    border: 2px solid #000000;
-    color: #000000;
+    border: 2px solid var(--dark);
+    color: var(--dark);
     font-weight: 500;
 }
 
 .btn-outline-light {
-    color: #000000;
+    color: var(--dark);
     background: #FFFFFF;
     border: 2px solid #EEEEEE;
     font-weight: 500;
@@ -990,15 +1000,18 @@ ul.social li a i {
 /* collection banner end */
 
 /* filterbar start */
-.filterbar .form-check-input {
+.filterbar .form-check-input,
+.login-register .form-check-input {
     border: 2px solid #E6E6E6;
 }
 
-.filterbar .form-check-label {
+.filterbar .form-check-label,
+.login-register .form-check-label {
     margin-left: 5px;
 }
 
-.filterbar .form-check-input:checked[type="radio"] {
+.filterbar .form-check-input:checked[type="radio"],
+.login-register .form-check-input:checked[type="radio"] {
     background-image: url(../../images/active-check.svg);
     background-color: #fff;
 }
@@ -1222,3 +1235,38 @@ ul.select-size li.active > span {
     transform: translateX(0);
 }
 /* back to top end */
+
+/* login register start */
+.btn-facebook {
+    background-color: #4267B2;
+    color:var(--white);
+}
+.btn-facebook:hover {
+    background-color: #4b72c1;
+    color:var(--white);
+}
+.divider {
+    position: relative;
+    text-align: center;
+    margin:0 -40px;
+}
+.divider::after {
+    content:"";
+    position: absolute;
+    top:50%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--whisper);
+}
+.divider > p {
+    position: relative;
+    z-index: 1;
+    padding: 0 15px;
+    background: #fff;
+    display: inline-block;
+}
+.login-register input::placeholder {
+    font-size: 14px;
+}

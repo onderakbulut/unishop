@@ -11,6 +11,7 @@ jQuery(function() {
         closeMenu();
     });
     body.on("click", ".close-btn",function(e){
+		e.preventDefault();
         closeMenu();
     });
     
@@ -44,6 +45,7 @@ jQuery(function() {
     });
 
     body.on("click", ".push-cart",function(e){
+		e.preventDefault();
         openCart();
     });
     body.on("click", ".mask-overlay",function(e){

@@ -50,6 +50,9 @@
 
 /*  Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {  
+    .lh-lg-22 {
+        line-height: 22px;
+    }
     .product-buttons {
         bottom: 0;
         padding: 20px 0;
@@ -93,6 +96,13 @@
     .px-lg-40 {
         padding-left:40px!important;
         padding-right:40px!important;
+    }
+    .py-lg-40 {
+        padding-top:40px!important;
+        padding-bottom:40px!important;
+    }
+    .p-lg-40 {
+        padding:40px!important;
     }
     .cart-popup {
         width:400px;
