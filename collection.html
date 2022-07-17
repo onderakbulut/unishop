@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
     <!-- animate css -->
     <link rel="stylesheet" href="./assets/plugins/animate.min.css">
+    <!-- fancybox -->
+    <link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.css">
     
     <!-- custom theme css -->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -32,6 +34,212 @@
 
 <body>
     <div class="mask-overlay"></div>
+
+    <!-- quick view start -->
+    <div class="modal fade" id="quickView" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-fullscreen-lg-down modal-dialog-scrollable">
+            <div class="modal-content rounded-0">
+                <div class="modal-body">
+                    <button type="button" class="btn-close position-absolute top-0 end-0 mt-2 me-2" data-bs-dismiss="modal"
+                        data-bs-target="#quickView"></button>
+                    <!-- product single start -->
+                    <section class="product-single  py-3">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-7 mb-3 mb-lg-0">
+                                    <div class="product-left">
+                                        <div class="row">
+                                            <div class="col-12 col-xl-auto order-2 order-xl-1 thumb-left">
+                                                <div class="swiper product-thumbs quick">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <img src="images/product-single/detail1.jpeg" alt="...">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="images/product-single/detail2.jpeg" alt="...">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="images/product-single/detail3.jpeg" alt="...">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="images/product-single/detail4.jpeg" alt="...">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img class="play-icon"
+                                                                src="./images/product-single/play-icon.svg" alt="...">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="images/product-single/detail5.jpeg" alt="...">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="images/product-single/detail6.jpeg" alt="...">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-xl order-1 order-xl-2 mb-1 mb-xl-0 thumb-right">
+                                                <div class="swiper product-gallery quick">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide" data-fancybox="gallery"
+                                                            data-src="./images/product-single/detail1-big.jpeg">
+                                                            <img src="images/product-single/detail1.jpeg" alt="..."
+                                                                class="img-fluid">
+                                                        </div>
+                                                        <div class="swiper-slide" data-fancybox="gallery"
+                                                            data-src="./images/product-single/detail2-big.jpeg">
+                                                            <img src="images/product-single/detail2.jpeg" alt="..."
+                                                                class="img-fluid">
+                                                        </div>
+                                                        <div class="swiper-slide" data-fancybox="gallery"
+                                                            data-src="./images/product-single/detail3-big.jpeg">
+                                                            <img src="images/product-single/detail3.jpeg" alt="..."
+                                                                class="img-fluid">
+                                                        </div>
+                                                        <div class="swiper-slide" data-fancybox="gallery"
+                                                            data-src="./images/product-single/detail4-big.jpeg">
+                                                            <img src="images/product-single/detail4.jpeg" alt="..."
+                                                                class="img-fluid">
+                                                        </div>
+                                                        <div class="swiper-slide" data-fancybox="gallery" data-type="iframe"
+                                                            data-src="https://www.youtube.com/embed/dvW81bvexh8?controls=1&enablejsapi=1&modestbranding=1&playsinline=1&rel=0">
+                                                            <div class="position-relative" style="aspect-ratio: 3 / 4;">
+                                                                <iframe
+                                                                    class="position-absolute start-0 top-0 end-0 bottom-0 w-100 h-100"
+                                                                    src="https://www.youtube.com/embed/dvW81bvexh8?controls=1&enablejsapi=1&modestbranding=1&playsinline=1&rel=0"
+                                                                    frameborder="0"></iframe>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide" data-fancybox="gallery"
+                                                            data-src="./images/product-single/detail5-big.jpeg">
+                                                            <img src="images/product-single/detail5.jpeg" alt="..."
+                                                                class="img-fluid">
+                                                        </div>
+                                                        <div class="swiper-slide" data-fancybox="gallery"
+                                                            data-src="./images/product-single/detail6-big.jpeg">
+                                                            <img src="images/product-single/detail6.jpeg" alt="..."
+                                                                class="img-fluid">
+                                                        </div>
+    
+                                                    </div>
+                                                    <div class="swiper-button-next"></div>
+                                                    <div class="swiper-button-prev"></div>
+                                                    <button class="btn btn-zoom"><i
+                                                            class="las la-expand-arrows-alt"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="product-info ps-xl-33 d-flex flex-column h-100">
+                                        <h4 class="fw-400 lh-lg-36 mb-lg-3">Under Armour Training Stretch Woven Half Zip
+                                            Jacket.</h4>
+                                        <div class="rating d-flex mb-12">
+                                            <div class="stars me-12">
+                                                <i class="las la-star"></i>
+                                                <i class="las la-star"></i>
+                                                <i class="las la-star"></i>
+                                                <i class="las la-star"></i>
+                                                <i class="las la-star text-mercury"></i>
+                                            </div>
+                                            <span class="text-dove">16 Reviews</span>
+                                        </div>
+                                        <div class="single-price mb-2 mb-lg-4">
+                                            <span class="price h4">$200</span>
+                                        </div>
+                                        <div class="variants mb-3 mb-lg-32">
+                                            <div class="swatch mb-3 mb-lg-4">
+                                                <div class="swatch-title mb-2">
+                                                    <span class="fw-600 me-12">COLOR</span>
+                                                    <span class="text-dove active-color">White</span>
+                                                </div>
+                                                <ul class="select-swatch list-inline mb-0">
+                                                    <li class="list-inline-item" data-color="Blue"><span
+                                                            class="swatch-value" style="background-color:#1B2248"></span>
+                                                    </li>
+                                                    <li class="list-inline-item active" data-color="White"><span
+                                                            class="swatch-value" style="background-color:#ffffff"></span>
+                                                    </li>
+                                                    <li class="list-inline-item" data-color="Gray"><span
+                                                            class="swatch-value" style="background-color:#EEEEEE"></span>
+                                                    </li>
+                                                    <li class="list-inline-item" data-color="Red"><span class="swatch-value"
+                                                            style="background-color:#9F0B0B"></span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="size mb-3 mb-lg-4">
+                                                <div class="size-title mb-2 d-flex justify-content-between">
+                                                    <div>
+                                                        <span class="fw-600 me-12">SIZE</span>
+                                                        <span class="text-dove active-size">S</span>
+                                                    </div>
+                                                    <a class="text-dark" href="#">Size Guide</a>
+                                                </div>
+                                                <ul class="select-size list-inline mb-0">
+                                                    <li class="list-inline-item active" data-size="S"><span
+                                                            class="size-value">S</span></li>
+                                                    <li class="list-inline-item" data-size="M"><span
+                                                            class="size-value">M</span></li>
+                                                    <li class="list-inline-item" data-size="L"><span
+                                                            class="size-value">L</span></li>
+                                                    <li class="list-inline-item" data-size="XL"><span
+                                                            class="size-value">XL</span></li>
+                                                    <li class="list-inline-item" data-size="2XL"><span
+                                                            class="size-value">2XL</span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="single-quantity">
+                                                <div class="quantity-title mb-2">
+                                                    <span class="fw-600 me-12">QUANTITY</span>
+                                                </div>
+                                                <div class="quantity d-flex">
+                                                    <button class="minus bg-white text-black"><i
+                                                            class="las la-minus fs-15"></i></button>
+                                                    <input type="number" class="qty text-center" step="1" min="0" max="9999"
+                                                        value="1">
+                                                    <button class="plus bg-white text-black"><i
+                                                            class="las la-plus fs-15"></i></button>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                        <div class="mb-3">
+                                            <a href="#"
+                                                class="btn btn-dark py-lg-15 px-lg-40 rounded-0 w-100 fs-15 add-to-bag fw-600 mb-2 border-2">ADD
+                                                TO BAG</a>
+                                            <a href="#"
+                                                class="btn btn-default py-lg-15 px-lg-40 rounded-0 w-100 fs-15 buy-now fw-600">BUY
+                                                NOW</a>
+                                        </div>
+                                        <ul class="list-inline d-flex justify-content-evenly mb-lg-2">
+                                            <li class="list-inline-item"><a class="text-dark text-decoration-none"
+                                                    href="#"><i class="lar la-heart"></i><span class="ms-2 fs-14 fw-600">
+                                                        ADD TO WISHLIST</span></a></li>
+                                            <li class="list-inline-item"><a class="text-dark text-decoration-none"
+                                                    href="#"><i class="las la-random"></i></i><span
+                                                        class="ms-2 fs-14 fw-600"> COMPARE</span></a></li>
+                                        </ul>
+                                        <div class="product-meta mt-auto">
+                                            <ul class="list-unstyled mb-0 fs-14">
+                                                <li class="mb-2"><span class="text-dove">SKU:</span> <span
+                                                        class="fw-600">051</span></li>
+                                                <li class="mb-2"><span class="text-dove">CATEGORY:</span> <span
+                                                        class="fw-600">T-Shirts</span></li>
+                                                <li><span class="text-dove">TAGS:</span> <span class="fw-600">Shirt,
+                                                        Men</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- product single end -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- quick view end -->
 
     <!-- mobile menu start -->
     <div class="mobile-menu d-flex flex-column">
@@ -439,7 +647,7 @@
                     </div>
                     <div class="col col-lg-2 text-center">
                         <a href="index.html">
-                            <img src="images/logo.png" alt="...">
+                            <img src="images/logo.svg" alt="...">
                         </a>
                     </div>
                     <div class="col col-lg-5">
@@ -738,10 +946,15 @@
                                             <div class="product-image position-relative mb-3">
                                                 <a class="d-block text-center" href="#">
                                                     <img src="images/product/product-1.jpg" alt="..." class="img-fluid">
-                                                    <div class="product-labels">
-                                                        <span class="label-sale">SALE</span>
-                                                    </div>
-                                                </a>
+                                                </a> 
+                                                <div class="product-labels">
+                                                    <span class="label-sale">SALE</span>
+                                                </div>
+                                                <div class="product-buttons">
+                                                    <a class="text-decoration-none" href="#"><i class="las la-shopping-cart"></i></a>
+                                                    <a class="text-decoration-none quick-view" href="#"><i class="las la-eye"></i></a>
+                                                    <a class="text-decoration-none" href="#"><i class="lar la-heart"></i></a>
+                                                </div>
                                             </div>
                                             <div class="product-info text-center">
                                                 <div class="product-name mb-2">
@@ -761,7 +974,12 @@
                                             <div class="product-image position-relative mb-3">
                                                 <a class="d-block text-center" href="#">
                                                     <img src="images/product/product-2.jpg" alt="..." class="img-fluid">
-                                                </a>
+                                                </a> 
+                                                <div class="product-buttons">
+                                                    <a class="text-decoration-none" href="#"><i class="las la-shopping-cart"></i></a>
+                                                    <a class="text-decoration-none quick-view" href="#"><i class="las la-eye"></i></a>
+                                                    <a class="text-decoration-none" href="#"><i class="lar la-heart"></i></a>
+                                                </div>
                                             </div>
                                             <div class="product-info text-center">
                                                 <div class="product-name mb-2">
@@ -796,7 +1014,12 @@
                                             <div class="product-image position-relative mb-3">
                                                 <a class="d-block text-center" href="#">
                                                     <img src="images/product/product-3.jpg" alt="..." class="img-fluid">
-                                                </a>
+                                                </a> 
+                                                <div class="product-buttons">
+                                                    <a class="text-decoration-none" href="#"><i class="las la-shopping-cart"></i></a>
+                                                    <a class="text-decoration-none quick-view" href="#"><i class="las la-eye"></i></a>
+                                                    <a class="text-decoration-none" href="#"><i class="lar la-heart"></i></a>
+                                                </div>
                                             </div>
                                             <div class="product-info text-center">
                                                 <div class="product-name mb-2">
@@ -815,7 +1038,12 @@
                                             <div class="product-image position-relative mb-3">
                                                 <a class="d-block text-center" href="#">
                                                     <img src="images/product/product-4.jpg" alt="..." class="img-fluid">
-                                                </a>
+                                                </a> 
+                                                <div class="product-buttons">
+                                                    <a class="text-decoration-none" href="#"><i class="las la-shopping-cart"></i></a>
+                                                    <a class="text-decoration-none quick-view" href="#"><i class="las la-eye"></i></a>
+                                                    <a class="text-decoration-none" href="#"><i class="lar la-heart"></i></a>
+                                                </div>
                                             </div>
                                             <div class="product-info text-center">
                                                 <div class="product-name mb-2">
@@ -834,7 +1062,12 @@
                                             <div class="product-image position-relative mb-3">
                                                 <a class="d-block text-center" href="#">
                                                     <img src="images/product/product-5.jpg" alt="..." class="img-fluid">
-                                                </a>
+                                                </a> 
+                                                <div class="product-buttons">
+                                                    <a class="text-decoration-none" href="#"><i class="las la-shopping-cart"></i></a>
+                                                    <a class="text-decoration-none quick-view" href="#"><i class="las la-eye"></i></a>
+                                                    <a class="text-decoration-none" href="#"><i class="lar la-heart"></i></a>
+                                                </div>
                                             </div>
                                             <div class="product-info text-center">
                                                 <div class="product-name mb-2">
@@ -853,7 +1086,12 @@
                                             <div class="product-image position-relative mb-3">
                                                 <a class="d-block text-center" href="#">
                                                     <img src="images/product/product-6.jpg" alt="..." class="img-fluid">
-                                                </a>
+                                                </a> 
+                                                <div class="product-buttons">
+                                                    <a class="text-decoration-none" href="#"><i class="las la-shopping-cart"></i></a>
+                                                    <a class="text-decoration-none quick-view" href="#"><i class="las la-eye"></i></a>
+                                                    <a class="text-decoration-none" href="#"><i class="lar la-heart"></i></a>
+                                                </div>
                                             </div>
                                             <div class="product-info text-center">
                                                 <div class="product-name mb-2">
@@ -872,7 +1110,12 @@
                                             <div class="product-image position-relative mb-3">
                                                 <a class="d-block text-center" href="#">
                                                     <img src="images/product/product-7.jpg" alt="..." class="img-fluid">
-                                                </a>
+                                                </a> 
+                                                <div class="product-buttons">
+                                                    <a class="text-decoration-none" href="#"><i class="las la-shopping-cart"></i></a>
+                                                    <a class="text-decoration-none quick-view" href="#"><i class="las la-eye"></i></a>
+                                                    <a class="text-decoration-none" href="#"><i class="lar la-heart"></i></a>
+                                                </div>
                                             </div>
                                             <div class="product-info text-center">
                                                 <div class="product-name mb-2">
@@ -891,7 +1134,12 @@
                                             <div class="product-image position-relative mb-3">
                                                 <a class="d-block text-center" href="#">
                                                     <img src="images/product/product-8.jpg" alt="..." class="img-fluid">
-                                                </a>
+                                                </a> 
+                                                <div class="product-buttons">
+                                                    <a class="text-decoration-none" href="#"><i class="las la-shopping-cart"></i></a>
+                                                    <a class="text-decoration-none quick-view" href="#"><i class="las la-eye"></i></a>
+                                                    <a class="text-decoration-none" href="#"><i class="lar la-heart"></i></a>
+                                                </div>
                                             </div>
                                             <div class="product-info text-center">
                                                 <div class="product-name mb-2">
@@ -1051,6 +1299,12 @@
         </div>
     </section>
     <!-- footer end -->
+
+    <!-- back to top start -->
+    <a href="#" id="back-to-top" class="d-flex align-items-center justify-content-center rounded-circle">
+        <i class="las la-arrow-up"></i>
+    </a>
+    <!-- back to top end -->
     
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -1058,6 +1312,10 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- swiper -->
     <script src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
+    <!-- fancybox -->
+    <script src="./assets/plugins/fancybox/fancybox.umd.js"></script>
+    <!-- zoom -->
+    <script src="./assets/plugins/jquery.zoom.js"></script>
     
     <!-- custom theme js -->
     <script src="./assets/js/main.js"></script>

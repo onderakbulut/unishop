@@ -6263,8 +6263,8 @@ fieldset:disabled .btn {
   transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
-  -webkit-transform: translate(0, -50px);
-          transform: translate(0, -50px);
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -12679,7 +12679,8 @@ fieldset:disabled .btn {
 .form-control:focus,
 .form-check-input:focus,
 .form-select:focus,
-.page-link:focus {
+.page-link:focus,
+.btn-close:focus {
   -webkit-box-shadow: unset;
           box-shadow: unset;
 }

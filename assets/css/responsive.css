@@ -50,7 +50,18 @@
 
 /*  Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {  
-
+    .product-buttons {
+        bottom: 0;
+        padding: 20px 0;
+        font-size: 20px;
+    }
+    .product-buttons > a {
+        width: 40px;
+        height: 40px;
+        margin: 0 5px;
+        opacity: 0;
+        transform: translateY(10px);
+    }
     .product-gallery .swiper-button-next,
     .product-gallery .swiper-button-prev {
         opacity: 0;
@@ -223,6 +234,16 @@
 
 /*  `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {  
+    .product-buttons {
+        padding:5px;
+        top:0;
+        flex-direction: column;
+    }
+    .product-buttons > a  {
+        margin:2px 0;
+        width: 30px;
+        height: 30px;
+    }
     aside.filterbar {
         position:fixed;
         z-index: 1052;

@@ -1,9 +1,17 @@
+$modal-fade-transform :  translateX(-100px);
+
 @import '../node_modules/bootstrap/scss/bootstrap';
 
 .btn-check:focus + .btn, .btn:focus,
 .form-control:focus,
 .form-check-input:focus,
 .form-select:focus,
-.page-link:focus {
+.page-link:focus,
+.btn-close:focus {
     box-shadow:unset;
+}
+
+.btn-dark {
+    background-color: #000000;
+    border-color: #000000;
 }

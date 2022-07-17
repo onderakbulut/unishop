@@ -279,8 +279,8 @@ jQuery(function() {
 	/* filterbar end */
    
 	/* product single start */	
-	if($(".product-thumbs").length){
-		var productThumbs = new Swiper('.product-thumbs', {
+	if($(".product-thumbs:not(.quick)").length){
+		var productThumbs = new Swiper('.product-thumbs:not(.quick)', {
 		
 			centeredSlides: false,
 			loop: true,
@@ -303,8 +303,8 @@ jQuery(function() {
 			}
 		});
 	}
-	if($(".product-gallery").length){
-		var productSlider = new Swiper('.product-gallery', {
+	if($(".product-gallery:not(.quick)").length){
+		var productSlider = new Swiper('.product-gallery:not(.quick)', {
 			spaceBetween: 0,
 			centeredSlides: false,
 			loop:true,
@@ -321,40 +321,46 @@ jQuery(function() {
 			
 		});
 	}
-	$(".product-gallery .swiper-slide").each(function () {
-		let $this = $(this),
-			image = $this;
-		$this.zoom({
-			url: image.attr('data-src'),
-			touch: false,
-			on : 'mouseover',
+
+	if($(".product-gallery:not(.quick)").length){
+		$(".product-gallery:not(.quick) .swiper-slide").each(function () {
+			let $this = $(this),
+				image = $this;
+			$this.zoom({
+				url: image.attr('data-src'),
+				touch: false,
+				on : 'mouseover',
+			});
 		});
-	});
+	}	
 	$(".product-gallery .swiper-slide").on("click",function(e){
 		e.stopImmediatePropagation();
 	});
-	Fancybox.bind('[data-fancybox="gallery"]:not(.swiper-slide-duplicate)', {
-		Image: {
-			zoom: false,
-		},
-		showClass: "fancybox-zoomIn",
-		hideClass: "fancybox-zoomOut",
-		Toolbar: {
-			display: [
-				"zoom",
-				"fullscreen",
-				"thumbs",
-				"close",
-				"counter"
-			],
-		},
-		on: {
-			closing: (fancybox, slide) => {
-				var index = fancybox.getSlide().index;
-				productSlider.slideToLoop(index);
+
+	if($('[data-fancybox="gallery"]').length){
+		Fancybox.bind('[data-fancybox="gallery"]:not(.swiper-slide-duplicate)', {
+			Image: {
+				zoom: false,
 			},
-		},
-	});
+			showClass: "fancybox-zoomIn",
+			hideClass: "fancybox-zoomOut",
+			Toolbar: {
+				display: [
+					"zoom",
+					"fullscreen",
+					"thumbs",
+					"close",
+					"counter"
+				],
+			},
+			on: {
+				closing: (fancybox, slide) => {
+					var index = fancybox.getSlide().index;
+					productSlider.slideToLoop(index);
+				},
+			},
+		});
+	}	
 	$(".btn-zoom").on("click",function(){
 		Fancybox.fromOpener('[data-fancybox="gallery"]:not(.swiper-slide-duplicate)', {
 			startIndex: productSlider.realIndex,
@@ -377,6 +383,72 @@ jQuery(function() {
 			$this.closest('.size').find('span.active-size').text($this.data('size'));
 		}
 	});
+	/* product single end */
+
+	/* back to top start */
+	$(window).on("scroll",function(){
+		if($(window).scrollTop() > $(window).height()){
+			$("#back-to-top").addClass("active");
+		}
+		else {
+			$("#back-to-top").removeClass("active");
+		}
+	});
+	$("body").on("click","#back-to-top",function(){
+		$("html, body").stop().animate({ scrollTop: "0" }, 800, "easeIn"); 
+	});
+	/* back to top end */
+	
+	/* quick view start */
+	$(".quick-view").on("click",function(e){
+		e.preventDefault();
+		const quickView = new bootstrap.Modal(document.getElementById('quickView'));
+		const modalToggle = document.getElementById('quickView'); 
+		quickView.show(modalToggle);
+	});
+
+	if($(".product-thumbs.quick").length){
+		var quickProductThumbs = new Swiper('.product-thumbs.quick', {
+		
+			centeredSlides: false,
+			loop: true,
+			slideToClickedSlide: true,
+			watchSlidesProgress: true,
+			breakpoints: {
+				0: {
+					direction: 'horizontal',
+					spaceBetween: 4,
+					slidesPerView: 4,
+					loopedSlides: 4,
+				},
+				1200: {
+					direction: 'vertical',
+					slidesPerView: 5,
+					loopedSlides: 5,
+					spaceBetween: 0,
+				},
+				
+			}
+		});
+	}
+	if($(".product-gallery.quick").length){
+		var quickProductSlider = new Swiper('.product-gallery.quick', {
+			spaceBetween: 0,
+			centeredSlides: false,
+			loop:true,
+			direction: 'horizontal',
+			loopedSlides: 5,
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+			resizeObserver:true,
+			thumbs: {
+				swiper: quickProductThumbs
+			},
+			
+		});
+	}
 
 });
 
