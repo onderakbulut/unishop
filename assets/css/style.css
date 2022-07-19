@@ -15,6 +15,7 @@
     --pink: #FFD5C5;
     --blue: #4777DC;
     --mercury : #E9E9E9;
+    --alabaster : #F8F8F8;
 }
 
 body {
@@ -50,7 +51,10 @@ body {
     padding-top: 13px !important;
     padding-bottom: 13px !important;
 }
-
+.px-12 {
+    padding-left: 12px!important;
+    padding-right: 12px!important;
+}
 .py-21 {
     padding-top: 21px !important;
     padding-bottom: 21px !important;
@@ -74,7 +78,9 @@ body {
 .text-winkle {
     color: var(--winkle);
 }
-
+.bg-alabaster {
+    background-color: var(--alabaster);
+}
 .bg-blue {
     background-color: #4777DC;
 }
@@ -196,6 +202,9 @@ body {
 
 .fs-15 {
     font-size: 15px;
+}
+.fs-18 {
+    font-size: 18px;
 }
 
 .fs-20 {
@@ -757,7 +766,8 @@ a.close-btn {
 }
 
 .home-categories .cat-image {
-    transition: all .6s ease-in-out;
+    transition: all .5s ease;
+
 }
 
 .cat-item:hover .cat-image {
@@ -875,7 +885,7 @@ a.close-btn {
 
 /* home banner start */
 .banner-image>img {
-    transition: .4s;
+    transition: all .5s ease;
 }
 
 .banner-inner:hover .banner-image>img {
@@ -1000,9 +1010,8 @@ ul.social li a i {
 /* collection banner end */
 
 /* filterbar start */
-.filterbar .form-check-input,
-.login-register .form-check-input {
-    border: 2px solid #E6E6E6;
+.form-check-input {
+    border: 2px solid #E6E6E6!important;
 }
 
 .filterbar .form-check-label,
@@ -1010,8 +1019,7 @@ ul.social li a i {
     margin-left: 5px;
 }
 
-.filterbar .form-check-input:checked[type="radio"],
-.login-register .form-check-input:checked[type="radio"] {
+.form-check-input:checked[type="radio"] {
     background-image: url(../../images/active-check.svg);
     background-color: #fff;
 }
@@ -1201,7 +1209,11 @@ ul.select-size li.active > span {
     height: 44px;
 }
 .add-to-bag,
-.buy-now {
+.buy-now,
+.checkout {
+    letter-spacing: 2px;
+}
+.letter-2 {
     letter-spacing: 2px;
 }
 .detail-tabs.nav-tabs .nav-link {
@@ -1267,6 +1279,31 @@ ul.select-size li.active > span {
     background: #fff;
     display: inline-block;
 }
-.login-register input::placeholder {
+.login-register input::placeholder, 
+.comment-form input::placeholder,
+.comment-form textarea::placeholder {
     font-size: 14px;
 }
+/* login register end */
+
+/* cart start */
+.cart-img {
+    max-width: 100px;
+    width: 100%;
+    max-height: 133px;
+    object-fit: cover;
+}
+.cart-item:not(:last-child) {
+    border-bottom:1px solid var(--whisper);
+}
+.cart-total {
+    background: #FFFFFF;
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 3px;
+}
+.page-header > h2 ,
+.blog-featured-image h2 {
+    letter-spacing: -0.02em;
+}
+/* cart end */
+

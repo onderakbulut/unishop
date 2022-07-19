@@ -50,6 +50,13 @@
 
 /*  Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {  
+    .about-us {
+        padding-top:300px;
+    }
+    .about-image {
+        margin-top:-300px;
+    }
+
     .lh-lg-22 {
         line-height: 22px;
     }
@@ -126,6 +133,9 @@
     }
     .py-lg-60 {
         padding-top: 60px!important;
+        padding-bottom: 60px!important;
+    }
+    .pb-lg-60 {
         padding-bottom: 60px!important;
     }
     .py-lg-80 {

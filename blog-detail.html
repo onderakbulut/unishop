@@ -25,7 +25,6 @@
     <!-- fancybox -->
     <link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.css">
 
-    
     <!-- custom theme css -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -35,6 +34,26 @@
 
 <body>
     <div class="mask-overlay"></div>
+
+    <!-- modal start -->
+    <div class="modal fade" id="myModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModal">Our Term and Pricacy Policy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+
+                    <p>Donec rutrum congue leo eget malesuada. Curabitur aliquet quam id dui posuere blandit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+
+                    <p>Proin eget tortor risus. Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal end -->
 
     <!-- quick view start -->
     <div class="modal fade" id="quickView" tabindex="-1">
@@ -361,7 +380,7 @@
                                         <button class="plus bg-white text-black"><i class="las la-plus fs-15"></i></button>
                                     </div>
                                     <div class="cart-price">
-                                        <ins class="text-decoration-none fw-500">$40.00</ins>
+                                        <ins class="text-decoration-none fw-500">$300</ins>
                                     </div>
                                 </div> 
                             </div>
@@ -378,7 +397,7 @@
                                         <button class="plus bg-white text-black"><i class="las la-plus fs-15"></i></button>
                                     </div>
                                     <div class="cart-price">
-                                        <ins class="text-decoration-none fw-500">$40.00</ins>
+                                        <ins class="text-decoration-none fw-500">$300</ins>
                                     </div>
                                 </div> 
                             </div>
@@ -396,7 +415,7 @@
                                     </div>
                                     <div class="cart-price">
                                         <!-- <del>$60.00</del> -->
-                                        <ins class="text-decoration-none fw-500">$40.00</ins>
+                                        <ins class="text-decoration-none fw-500">$300</ins>
                                     </div>
                                 </div> 
                             </div>
@@ -663,7 +682,7 @@
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="text-reset text-decoration-none w-100 h-100 d-flex align-items-center justify-content-center"><i
+                                        class="text-reset text-decoration-none w-100 h-100  d-flex align-items-center justify-content-center"><i
                                             class="las la-user"></i></a>
                                 </li>
                             </ul>
@@ -681,453 +700,135 @@
     </header>
     <!-- header end -->
 
-    <!-- home slider start -->
-    <section class="home-slider">
-        <div class="swiper homeSlider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="slider-text">
-                        <div class="container">
+    <!-- breadcrumb start -->
+    <nav class="container">
+        <ol class="breadcrumb mb-0 py-13">
+          <li class="breadcrumb-item"><a class="text-decoration-none text-reset" href="#">Home</a></li>
+          <li class="breadcrumb-item active">Journal</li>
+        </ol>
+    </nav>
+    <!-- breadcrumb end -->
+
+    <!-- blog detail start -->
+    <section class="blog-detail">
+        <div class="blog-featured-image mb-4 mb-lg-80">
+            <div class="position-relative">
+                <img src="./images/blog/blog-detail.jpg" alt="..." class="w-100">
+                <div class="position-absolute start-0 top-0 end-0 bottom-0 text-light d-flex flex-column justify-content-center align-items-center text-center py-4">
+                    <span class="date fs-14">MAY 15, 2020</span>
+                    <h2 class="fw-600 mb-0">Color, Size, Material Swatches</h2>
+                </div>
+            </div>
+        </div>
+        <div class="blog-content">
+            <div class="container">
+                <div class="row justify-content-center mb-3 mb-lg-40">
+                    <div class="col-lg-8">
+                        <p class="mb-lg-40 text-dove">Interior design is the art and science of enhancing the interiors, sometimes including the exterior, of a space or building, to achieve a healthier and more aesthetically pleasing environment for the end user. An interior designer is someone who plans, researches, coordinates, and manages such projects. </p>
+                        <img src="./images/blog/blog-detail-1.jpg" alt="..." class="img-fluid mb-3 mb-lg-40">                        
+                        <h4>Sometimes including the exterior</h4>
+                        <p class="text-dove">Interior design is the art and science of enhancing the interiors, sometimes including the exterior, of a space or building, to achieve a healthier and more aesthetically pleasing environment for the end user. An interior designer is someone who plans, researches, coordinates, and manages such projects. </p>                        
+                    </div>
+                </div>
+                <div class="row mb-3 mb-lg-40">
+                    <div class="col-6">
+                        <img src="./images/blog/blog-detail-2.jpg" alt="..." class="img-fluid">
+                    </div>
+                    <div class="col-6">
+                        <img src="./images/blog/blog-detail-3.jpg" alt="..." class="img-fluid">
+                    </div>
+                </div>
+                <div class="row justify-content-center mb-3 mb-lg-60">
+                    <div class="col-lg-8">
+                        <p class="mb-lg-40 text-dove">Interior design is the art and science of enhancing the interiors, sometimes including the exterior, of a space or building, to achieve a healthier and more aesthetically pleasing environment for the end user. An interior designer is someone who plans, researches, coordinates, and manages such projects. </p>
+                        <h3 class="fst-italic mb-4">Interior design is the art and science of enhancing the interiors, sometimes including the exterior, of a space or building.</h3>
+                        <figcaption class="blockquote-footer mb-4 mb-lg-40">
+                            FRANK GALLAGHERS
+                        </figcaption>
+                        <p class="mb-lg-40 text-dove">Interior design is the art and science of enhancing the interiors, sometimes including the exterior, of a space or building, to achieve a healthier and more aesthetically pleasing environment for the end user. An interior designer is someone who plans, researches, coordinates, and manages such projects. </p>
+
+                    </div>
+                </div>
+                <div class="row justify-content-center mb-lg-60">
+                    <div class="col-lg-8 d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="tags mb-3 mb-lg-0">
+                            <span class="fs-18 fw-600 me-3">Tags:</span>
+                            <a href="#" class="btn  btn-outline-light">Cool</a>
+                            <a href="#" class="btn  btn-outline-light">Vintage</a>
+                        </div>
+                        <div class="share d-flex align-items-center mb-3 mb-lg-0">
+                            <span class="fs-18 fw-600 me-3">Share:</span>
+                            <ul class="list-inline mb-0 text-dove">
+                                <li class="list-inline-item"><a class="text-decoration-none text-dove" href="#"><i class="lab la-facebook-f"></i></a></li>
+                                <li class="list-inline-item"><a class="text-decoration-none text-dove" href="#"><i class="lab la-instagram"></i></i></a></li>
+                                <li class="list-inline-item"><a class="text-decoration-none text-dove" href="#"><i class="lab la-pinterest-p"></i></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blog-comments bg-gray py-4 py-lg-60 mb-4 mb-lg-60">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h4 class="mb-lg-40">2 Comments</h4>
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="flex-shrink-0">
+                                <img src="./images/profile-1.png" alt="...">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h6>Great services!</h6>
+                                <p class="text-dove fs-14 mb-0">by <span class="text-dark">Zach</span> on 13 May, 2020</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="flex-shrink-0">
+                                <img src="./images/profile-2.png" alt="...">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h6>Fast shipping & support. Love it!</h6>
+                                <p class="text-dove fs-14 mb-0">by <span class="text-dark">Roze</span> on 13 May, 2020/p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comment-form">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="mb-3">
                             <div class="row">
-                                <div class="col-xl-8 col-xxl-6">
-                                    <div class="slider-title mb-2 mb-lg-4">
-                                        <h1 class="animate__animated animate__faster mb-0" data-animation="animate__fadeInUp">
-                                            Autumn’s Coming...
-                                        </h1>
-                                    </div>	
-                                    <div class="slider-desc mb-3 mb-lg-40">
-                                        <p class="animate__animated animate__fast mb-0" data-animation="animate__fadeInUp">We started with humble beginnings — selling out of our basement and frantically shipping orders as soon as we woke up. </p>
-                                    </div>
-                                    <div>
-                                        <a href="#" class="btn btn-default py-lg-10 px-lg-40 rounded-0 animate__animated animate__fast" data-animation="animate__fadeInUp">SHOP NOW</a>
-                                    </div>	
+                                <div class="col-lg-6">
+                                    <label class="mb-2" for="Name">Name</label>
+                                    <input type="text" class="form-control rounded-0 border-whisper border-2 py-10" id="Name" placeholder="Enter your name">
+                                </div>
+                                <div class="col-lg-6">
+                                    <label class="mb-2" for="Email">Email</label>
+                                    <input type="text" class="form-control rounded-0 border-whisper border-2 py-10" id="Email" placeholder="Enter your email">
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="slider-image" style="background-image: url(images/slider-01.jpg);"></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slider-text">
-                        <div class="container animate__animated" data-animation="animate__fadeInRight">
-                            <div class="row justify-content-end">
-                                <div class="col-xl-8 col-xxl-6">
-                                    <div class="slider-title mb-2 mb-lg-4">
-                                        <h1 class=" mb-0" ">
-                                            Autumn’s Coming...
-                                        </h1>
-                                    </div>	
-                                    <div class="slider-desc mb-3 mb-lg-40">
-                                        <p class="mb-0">We started with humble beginnings — selling out of our basement and frantically shipping orders as soon as we woke up. </p>
-                                    </div>
-                                    <div>
-                                        <a href="#" class="btn btn-default py-lg-10 px-lg-40 rounded-0">SHOP NOW</a>
-                                    </div>	
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-image" style="background-image: url(images/slider-02.jpg);"></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slider-text">
-                        <div class="container animate__animated" data-animation="animate__fadeInLeft">
-                            <div class="row">
-                                <div class="col-xl-8 col-xxl-6">
-                                    <div class="slider-title mb-2 mb-lg-4">
-                                        <h1 class=" mb-0" ">
-                                            Autumn’s Coming...
-                                        </h1>
-                                    </div>	
-                                    <div class="slider-desc mb-3 mb-lg-40">
-                                        <p class="mb-0">We started with humble beginnings — selling out of our basement and frantically shipping orders as soon as we woke up. </p>
-                                    </div>
-                                    <div>
-                                        <a href="#" class="btn btn-default py-lg-10 px-lg-40 rounded-0">SHOP NOW</a>
-                                    </div>	
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-image" style="background-image: url(images/slider-03.jpg);"></div>
-                </div>
-
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev d-none d-xl-flex"></div>
-            <div class="swiper-button-next d-none d-xl-flex"></div>
-        </div>
-    </section>
-    <!-- home slider end -->
-
-    <!-- home categories start -->
-    <section class="home-categories mb-4 mb-lg-80">
-        <div class="home-categories-inner row row-cols-sm-3 gx-0">
-            <div class="cat-item position-relative d-flex flex-column">
-                <div class="overflow-hidden">
-                    <div class="cat-image" style="background-image: url(images/home-collection-1.jpg)"></div>
-                </div> 
-                <div class="cat-name d-flex align-items-center justify-content-center text-center">
-                    <div>
-                        <h4>JEANS</h4>
-                        <p class="mb-0">Must have item</p>
+                        </div>  
+                        <div class="mb-3 mb-lg-40">
+                            <label class="mb-2" for="Message">Message</label>
+                            <textarea name="Message" rows="4" class="form-control rounded-0 border-whisper border-2" placeholder="Your message"></textarea>
+                        </div>                              
                     </div>
                 </div>
-                <a href="#" class="cat-link stretched-link"></a>
-            </div>
-            <div class="cat-item position-relative d-flex flex-column">
-                <div class="cat-name d-flex align-items-center justify-content-center text-center order-2 order-sm-1">
-                    <div>
-                        <h4>SHIRTS</h4>
-                        <p class="mb-0">Summer Vibe</p>
+                <div class="row justify-content-center mb-4 mb-lg-80">
+                    <div class="col-lg-5">
+                        <p class="mb-3 text-dove">Please note, comments must be approved before they are published</p>
+                        <button class="btn btn-dark py-11 lh-lg-22 rounded-0 w-100 fs-14 fw-600 border-2">POST COMMENT</button>
                     </div>
-                </div>
-                <div class="overflow-hidden order-1 order-sm-2">
-                    <div class="cat-image" style="background-image: url(images/home-collection-2.jpg)"></div>
-                </div> 
-                <a href="#" class="cat-link stretched-link"></a>
-            </div>
-            <div class="cat-item position-relative d-flex flex-column">
-                <div class="overflow-hidden">
-                    <div class="cat-image" style="background-image: url(images/home-collection-3.jpg)"></div>
-                </div> 
-                <div class="cat-name d-flex align-items-center justify-content-center text-center">
-                    <div>
-                        <h4>FOOTWEAR</h4>
-                        <p class="mb-0">Take you to anywhere</p>
-                    </div>
-                </div>
-                <a href="#" class="cat-link stretched-link"></a>
-            </div>
-        </div>
-    </section>
-    <!-- home categories end -->
-
-    <!-- product recommend start -->
-    <section class="product-recommend container mb-4 mb-lg-80">
-        <div class="text-center mb-4 mb-lg-40">
-            <h3 class="mb-4">Best Seller</h3>
-            <a href="#" class="btn py-lg-10 px-lg-40 btn-outline-light">VIEW ALL</a>
-        </div> 
-        <div class="product-slider swiper">
-            <div class="swiper-wrapper mb-4 mb-lg-60">
-                <div class="swiper-slide">
-                    <div class="product">
-                        <div class="product-inner">
-                            <div class="product-image position-relative mb-3">
-                                <a class="d-block text-center" href="#">
-                                    <img src="images/product/product-1.jpg" alt="..." class="img-fluid">
-                                </a> 
-                                <div class="product-labels">
-                                    <span class="label-sale">SALE</span>
-                                </div>
-                                <div class="product-buttons">
-                                    <a class="text-decoration-none" href="#"><i class="las la-shopping-cart"></i></a>
-                                    <a class="text-decoration-none quick-view" href="#"><i class="las la-eye"></i></a>
-                                    <a class="text-decoration-none" href="#"><i class="lar la-heart"></i></a>
-                                </div>
-                            </div>
-                            <div class="product-info text-center">
-                                <div class="product-name mb-2">
-                                    <a class="text-decoration-none text-dark" href="#">Under Armour Training stretch woven half zip jacket in white</a>
-                                </div>
-                                <div class="product-price">
-                                    <span class="old-price">$240</span>
-                                    <span class="new-price">$200</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="product">
-                        <div class="product-inner">
-                            <div class="product-image position-relative mb-3">
-                                <a class="d-block text-center" href="#">
-                                    <img src="images/product/product-2.jpg" alt="..." class="img-fluid">
-                                </a> 
-                                <div class="product-buttons">
-                                    <a class="text-decoration-none" href="#"><i class="las la-shopping-cart"></i></a>
-                                    <a class="text-decoration-none quick-view" href="#"><i class="las la-eye"></i></a>
-                                    <a class="text-decoration-none" href="#"><i class="lar la-heart"></i></a>
-                                </div>
-                            </div>
-                            <div class="product-info text-center">
-                                <div class="product-name mb-2">
-                                    <a class="text-decoration-none text-dark" href="#">Under Armour Training stretch woven half zip jacket in white</a>
-                                </div>
-                                <div class="product-price">
-                                    <span class="price">$200</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="product">
-                        <div class="product-inner">
-                            <div class="product-image position-relative mb-3">
-                                <a class="d-block text-center" href="#">
-                                    <img src="images/product/product-3.jpg" alt="..." class="img-fluid">
-                                </a> 
-                                <div class="product-labels">
-                                    <span class="label-new">NEW</span>
-                                </div>
-                                <div class="product-buttons">
-                                    <a class="text-decoration-none" href="#"><i class="las la-shopping-cart"></i></a>
-                                    <a class="text-decoration-none quick-view" href="#"><i class="las la-eye"></i></a>
-                                    <a class="text-decoration-none" href="#"><i class="lar la-heart"></i></a>
-                                </div>
-                            </div>
-                            <div class="product-info text-center">
-                                <div class="product-name mb-2">
-                                    <a class="text-decoration-none text-dark" href="#">Under Armour Training stretch woven half zip jacket in white</a>
-                                </div>
-                                <div class="product-price">
-                                    <span class="price">$200</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="product">
-                        <div class="product-inner">
-                            <div class="product-image position-relative mb-3">
-                                <a class="d-block text-center" href="#">
-                                    <img src="images/product/product-4.jpg" alt="..." class="img-fluid">
-                                </a> 
-                                <div class="product-buttons">
-                                    <a class="text-decoration-none" href="#"><i class="las la-shopping-cart"></i></a>
-                                    <a class="text-decoration-none quick-view" href="#"><i class="las la-eye"></i></a>
-                                    <a class="text-decoration-none" href="#"><i class="lar la-heart"></i></a>
-                                </div>
-                            </div>
-                            <div class="product-info text-center">
-                                <div class="product-name mb-2">
-                                    <a class="text-decoration-none text-dark" href="#">Under Armour Training stretch woven half zip jacket in white</a>
-                                </div>
-                                <div class="product-price">
-                                    <span class="price">$200</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev d-none d-xl-flex"></div>
-            <div class="swiper-button-next d-none d-xl-flex"></div>
-        </div>
-    </section>
-    <!-- product recommend end -->
-
-    <!-- home banner start -->
-    <section class="home-banner mb-4 mb-lg-80">
-        <div class="container">
-            <div class="row mb-3 mb-lg-30">
-                <div class="col-12">
-                    <div class="banner-inner position-relative">
-                        <div class="banner-image overflow-hidden">
-                            <img src="images/home-banner-1.jpg" alt="..." class="img-fluid">
-                        </div>
-                        <div class="banner-desc position-absolute top-0 start-0 end-0 bottom-0">
-                            <div class="container-fluid h-100">
-                                <div class="row align-items-center justify-content-end h-100 text-end">
-                                    <div class="col-lg-8">
-                                        <h1 class="text-white mb-4 mb-lg-10">Autumn <br>
-                                            Collection <br>
-                                            2020</h1>
-                                        <a href="#" class="btn btn-default py-lg-10 px-lg-40 rounded-0 stretched-link">SHOP
-                                            THE COLLECTION</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 mb-3 mb-lg-0">
-                    <div class="banner-inner position-relative">
-                        <div class="banner-image overflow-hidden">
-                            <img src="images/home-banner-2.jpg" alt="..." class="img-fluid">
-                        </div>
-                        <div class="banner-desc position-absolute top-0 start-0 end-0 bottom-0">
-                            <div class="container-fluid h-100">
-                                <div class="row align-items-center justify-content-end h-100 text-end">
-                                    <div class="col-12">
-                                        <h3 class="text-dark">Classic Tee</h3>
-                                        <p>Enjoy the Summer</p>
-                                        <a href="#" class="btn btn-default py-lg-10 px-lg-40 rounded-0 stretched-link">SHOP T-SHIRTS</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="banner-inner position-relative">
-                        <div class="banner-image overflow-hidden">
-                            <img src="images/home-banner-3.jpg" alt="..." class="img-fluid">
-                        </div>
-                        <div class="banner-desc position-absolute top-0 start-0 end-0 bottom-0">
-                            <div class="container-fluid h-100">
-                                <div class="row align-items-center justify-content-end h-100 text-end">
-                                    <div class="col-12">
-                                        <img src="./images/banner-logo.png" alt="..." class="mb-2">
-                                        <p>Shop Now. Enjoy Now. Pay Later.</p>
-                                        <a href="#" class="btn btn-default py-lg-10 px-lg-40 rounded-0 stretched-link">VIEW ALL ITEMS</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- home banner end -->
-
-    <!-- shopby start -->
-    <section class="shopby mb-4 mb-lg-80">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-center">
-                        <h3 class="mb-4  mb-4 mb-lg-40">Shop by</h3>
-                    </div> 
-                </div>
-            </div>
-            <div class="row row-cols-2 row-cols-md-4 row-cols-lg-5 justify-content-center">
-                <div class="col mb-3 mb-lg-0">
-                    <div class="banner-inner position-relative">
-                        <div class="banner-image overflow-hidden">
-                            <img src="images/shopby-1.jpg" alt="..." class="w-100">
-                        </div>
-                        <div class="banner-desc position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
-                            <a href="#" class="text-white mb-0 text-decoration-none h4 stretched-link">TANK</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-3 mb-lg-0">
-                    <div class="banner-inner position-relative">
-                        <div class="banner-image overflow-hidden">
-                            <img src="images/shopby-2.jpg" alt="..." class="w-100">
-                        </div>
-                        <div class="banner-desc position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
-                            <a href="#" class="text-white mb-0 text-decoration-none h4 stretched-link">SHORTS</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-3 mb-lg-0">
-                    <div class="banner-inner position-relative">
-                        <div class="banner-image overflow-hidden">
-                            <img src="images/shopby-3.jpg" alt="..." class="w-100">
-                        </div>
-                        <div class="banner-desc position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
-                            <a href="#" class="text-white mb-0 text-decoration-none h4 stretched-link">SHIRTS</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-3 mb-lg-0">
-                    <div class="banner-inner position-relative">
-                        <div class="banner-image overflow-hidden">
-                            <img src="images/shopby-4.jpg" alt="..." class="w-100">
-                        </div>
-                        <div class="banner-desc position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
-                            <a href="#" class="text-white mb-0 text-decoration-none h4 stretched-link">JEANS</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-3 mb-lg-0 d-none d-lg-block">
-                    <div class="banner-inner position-relative">
-                        <div class="banner-image overflow-hidden">
-                            <img src="images/shopby-5.jpg" alt="..." class="w-100">
-                        </div>
-                        <div class="banner-desc position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
-                            <a href="#" class="text-white mb-0 text-decoration-none h4 stretched-link">FOOTWEAR</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- shopby end -->
-
-    <!-- home desc -->
-    <section class="home-desc bg-gray py-5 py-lg-80 mb-4 mb-lg-80">
-        <div class="container">
-            <div class="row justify-content-center text-center">
-                <div class="col-lg-10">
-                    <h4>The best sets you'll ever wear — made in Ontario from locally-sourced merino wool
-                        Products provided by Uniso</h4>
                 </div>
             </div>
         </div>
+
     </section>
-    <!-- home desc -->
-
-    <!-- latest blog start -->
-    <section class="latest-blog mb-4 mb-lg-80">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-center">
-                        <h3 class="mb-4 mb-lg-40">From the Journal</h3>
-                    </div> 
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="blog-slider swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <article class="col blog-post">
-                                    <div class="post-image overflow-hidden mb-3">
-                                        <a href="#"><img src="images/blog/blog-1.jpg" alt="..." class="img-fluid"></a>
-                                    </div>
-                                    <div class="post-info text-center">
-                                        <p class="post-date text-dove mb-2">MAY 15, 2020</p>
-                                        <h5 class="fw-normal"><a class="text-reset text-decoration-none" href="#">Swim Jammers Endurance Long Racing Training Swimsuit</a></h5>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="swiper-slide">
-                                <article class="col blog-post">
-                                    <div class="post-image overflow-hidden mb-3">
-                                        <a href="#"><img src="images/blog/blog-2.jpg" alt="..." class="img-fluid"></a>
-                                    </div>
-                                    <div class="post-info text-center">
-                                        <p class="post-date text-dove mb-2">MAY 15, 2020</p>
-                                        <h5 class="fw-normal"><a class="text-reset text-decoration-none" href="#">Swim Jammers Endurance Long Racing Training Swimsuit</a></h5>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="swiper-slide">
-                                <article class="col blog-post">
-                                    <div class="post-image overflow-hidden mb-3">
-                                        <a href="#"><img src="images/blog/blog-3.jpg" alt="..." class="img-fluid"></a>
-                                    </div>
-                                    <div class="post-info text-center">
-                                        <p class="post-date text-dove mb-2">MAY 15, 2020</p>
-                                        <h5 class="fw-normal"><a class="text-reset text-decoration-none" href="#">Swim Jammers Endurance Long Racing Training Swimsuit</a></h5>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination position-relative bottom-0 mt-4 d-lg-none"></div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- latest blog end -->
-
+    <!-- blog detail end -->
+    
     <!-- insta feed start -->
     <section class="insta-feed border-top border-whisper pt-4 pt-lg-80">
         <div class="text-center mb-4 mb-lg-40">
