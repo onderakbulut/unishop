@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <!-- Bootstrap 5 CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="preload" href="assets/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="assets/css/bootstrap.min.css"></noscript>
     <!-- googlefonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +16,7 @@
         href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,900&display=swap"
         rel="stylesheet">
     <!-- lineawesome -->
-    <link rel="stylesheet" href="images/icons/css/line-awesome.css">
+    <link rel="stylesheet" href="images/icons/css/line-awesome.min.css">
     <!-- megamenu -->
     <link rel="stylesheet" href="./assets/css/megamenu.css">
     <!-- swiper -->
@@ -29,7 +30,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
 
-    <title>Uniso - eCommerce Design Template</title>
+    <title>Unishop - eCommerce Design Template</title>
 </head>
 
 <body>
@@ -40,7 +41,7 @@
         <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="myModal">Our Term and Pricacy Policy</h5>
+                    <h5 class="modal-title">Our Term and Pricacy Policy</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -119,9 +120,9 @@
                                                         <div class="swiper-slide">
                                                             <div class="position-relative" style="aspect-ratio: 3 / 4;">
                                                                 <iframe
-                                                                    class="position-absolute start-0 top-0 end-0 bottom-0 w-100 h-100"
-                                                                    src="https://www.youtube.com/embed/dvW81bvexh8?controls=1&enablejsapi=1&modestbranding=1&playsinline=1&rel=0"
-                                                                    frameborder="0"></iframe>
+                                                                    class="position-absolute start-0 top-0 end-0 bottom-0 w-100 h-100 lazyload"
+                                                                    data-src="https://www.youtube.com/embed/dvW81bvexh8?controls=1&modestbranding=1&playsinline=1&rel=0"
+                                                                    ></iframe>
                                                             </div>
                                                         </div>
                                                         <div class="swiper-slide">
@@ -227,7 +228,7 @@
                                                     href="#"><i class="lar la-heart"></i><span class="ms-2 fs-14 fw-600">
                                                         ADD TO WISHLIST</span></a></li>
                                             <li class="list-inline-item"><a class="text-dark text-decoration-none"
-                                                    href="#"><i class="las la-random"></i></i><span
+                                                    href="#"><i class="las la-random"></i><span
                                                         class="ms-2 fs-14 fw-600"> COMPARE</span></a></li>
                                         </ul>
                                         <div class="product-meta mt-auto">
@@ -320,7 +321,7 @@
 				</ul>
             </div>
             <div class="tab-pane fade" id="categoryTab">
-                <ul class="sidebar-menu list-unstyled" id="side-group">
+                <ul class="sidebar-menu list-unstyled">
                     <li>
                         <a href="#"><i class="las la-female me-3 fs-20"></i> Women’s Clothing</a>
                     </li>
@@ -742,9 +743,9 @@
                     <div class="col-lg-8">
                         <p class="mb-lg-40 text-dove">Interior design is the art and science of enhancing the interiors, sometimes including the exterior, of a space or building, to achieve a healthier and more aesthetically pleasing environment for the end user. An interior designer is someone who plans, researches, coordinates, and manages such projects. </p>
                         <h3 class="fst-italic mb-4">Interior design is the art and science of enhancing the interiors, sometimes including the exterior, of a space or building.</h3>
-                        <figcaption class="blockquote-footer mb-4 mb-lg-40">
+                        <span class="blockquote-footer mb-4 mb-lg-40">
                             FRANK GALLAGHERS
-                        </figcaption>
+                        </span>
                         <p class="mb-lg-40 text-dove">Interior design is the art and science of enhancing the interiors, sometimes including the exterior, of a space or building, to achieve a healthier and more aesthetically pleasing environment for the end user. An interior designer is someone who plans, researches, coordinates, and manages such projects. </p>
 
                     </div>
@@ -760,8 +761,8 @@
                             <span class="fs-18 fw-600 me-3">Share:</span>
                             <ul class="list-inline mb-0 text-dove">
                                 <li class="list-inline-item"><a class="text-decoration-none text-dove" href="#"><i class="lab la-facebook-f"></i></a></li>
-                                <li class="list-inline-item"><a class="text-decoration-none text-dove" href="#"><i class="lab la-instagram"></i></i></a></li>
-                                <li class="list-inline-item"><a class="text-decoration-none text-dove" href="#"><i class="lab la-pinterest-p"></i></i></a></li>
+                                <li class="list-inline-item"><a class="text-decoration-none text-dove" href="#"><i class="lab la-instagram"></i></a></li>
+                                <li class="list-inline-item"><a class="text-decoration-none text-dove" href="#"><i class="lab la-pinterest-p"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -813,7 +814,7 @@
                         </div>  
                         <div class="mb-3 mb-lg-40">
                             <label class="mb-2" for="Message">Message</label>
-                            <textarea name="Message" rows="4" class="form-control rounded-0 border-whisper border-2" placeholder="Your message"></textarea>
+                            <textarea id="Message" rows="4" class="form-control rounded-0 border-whisper border-2" placeholder="Your message"></textarea>
                         </div>                              
                     </div>
                 </div>
@@ -937,8 +938,8 @@
                         </div>
                         <ul class="list-inline social mb-0">
                             <li class="list-inline-item"><a class="text-decoration-none text-dove" href="#"><i class="lab la-facebook-f"></i></a></li>
-                            <li class="list-inline-item"><a class="text-decoration-none text-dove" href="#"><i class="lab la-instagram"></i></i></a></li>
-                            <li class="list-inline-item"><a class="text-decoration-none text-dove" href="#"><i class="lab la-pinterest-p"></i></i></a></li>
+                            <li class="list-inline-item"><a class="text-decoration-none text-dove" href="#"><i class="lab la-instagram"></i></a></li>
+                            <li class="list-inline-item"><a class="text-decoration-none text-dove" href="#"><i class="lab la-pinterest-p"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -948,7 +949,7 @@
             <div class="container-lg">
                 <div class="d-flex flex-column flex-lg-row justify-content-lg-between text-center align-items-center py-21">
                     <ul class="footer-list list-inline mb-lg-0">
-                        <li class="list-inline-item border-end border-whisper pe-3"><a class="text-decoration-none text-dove" href="#">© Uniso 2020. All Rights Reserved</a></li>
+                        <li class="list-inline-item border-end border-whisper pe-3"><a class="text-decoration-none text-dove" href="#">© Unishop 2020. All Rights Reserved</a></li>
                         <li class="list-inline-item border-end border-whisper pe-3"><a class="text-decoration-none text-dove" href="#">Privacy Policy</a></li>
                         <li class="list-inline-item"><a class="text-decoration-none text-dove" href="#">Terms & Conditions</a></li>
                     </ul>
@@ -966,7 +967,7 @@
     <!-- back to top end -->
 
     <!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
     <!-- bootstrap js -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- swiper -->

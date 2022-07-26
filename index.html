@@ -7,30 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <!-- Bootstrap 5 CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="preload" href="./assets/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/css/bootstrap.min.css"></noscript>
     <!-- googlefonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,900&display=swap"
-        rel="stylesheet">
+    <link rel="preload" href="./assets/fonts/font.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./assets/fonts/font.css"></noscript>
     <!-- lineawesome -->
-    <link rel="stylesheet" href="images/icons/css/line-awesome.css">
+    <link rel="preload" href="./images/icons/css/line-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./images/icons/css/line-awesome.min.css"></noscript>
     <!-- megamenu -->
-    <link rel="stylesheet" href="./assets/css/megamenu.css">
+    <link rel="preload" href="./assets/css/megamenu.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/css/megamenu.css"></noscript>
     <!-- swiper -->
-    <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+    <link rel="preload" href="./assets/plugins/swiper/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css"></noscript>
     <!-- animate css -->
-    <link rel="stylesheet" href="./assets/plugins/animate.min.css">
+    <link rel="preload" href="./assets/plugins/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/plugins/animate.min.css"></noscript>
     <!-- fancybox -->
-    <link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.css">
+    <link rel="preload" href="./assets/plugins/fancybox/fancybox.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/plugins/fancybox/fancybox.css"></noscript>
 
     
     <!-- custom theme css -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!-- responsive css -->
+    <link rel="preload" href="./assets/css/responsive.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/css/responsive.css"></noscript>
 
-    <title>Uniso - eCommerce Design Template</title>
+    <!-- <link rel="preload" as="image" href="./images/product/product-1.jpg" type="image/jpeg"> -->
+    <link rel="preload" as="image" href="./images/blog/blog-1.jpg" type="image/jpeg">
+    <link rel="preload" as="image" href="./images/insta-4.jpg" type="image/jpeg">
+
+    <title>Unishop - eCommerce Design Template</title>
 </head>
 
 <body>
@@ -54,26 +63,25 @@
                                                 <div class="swiper product-thumbs quick">
                                                     <div class="swiper-wrapper">
                                                         <div class="swiper-slide">
-                                                            <img src="images/product-single/detail1.jpeg" alt="...">
+                                                            <img src="./images/1px.jpg" data-src="./images/product-single/detail1.jpeg" alt="..."  class="img-fluid swiper-lazy" width="67" height="89">
                                                         </div>
                                                         <div class="swiper-slide">
-                                                            <img src="images/product-single/detail2.jpeg" alt="...">
+                                                            <img src="./images/1px.jpg" data-src="./images/product-single/detail2.jpeg" alt="..."  class="img-fluid swiper-lazy" width="67" height="89">
                                                         </div>
                                                         <div class="swiper-slide">
-                                                            <img src="images/product-single/detail3.jpeg" alt="...">
+                                                            <img src="./images/1px.jpg" data-src="./images/product-single/detail3.jpeg" alt="..."  class="img-fluid swiper-lazy" width="67" height="89">
                                                         </div>
                                                         <div class="swiper-slide">
-                                                            <img src="images/product-single/detail4.jpeg" alt="...">
+                                                            <img src="./images/1px.jpg" data-src="./images/product-single/detail4.jpeg" alt="..."  class="img-fluid swiper-lazy" width="67" height="89">
                                                         </div>
                                                         <div class="swiper-slide">
-                                                            <img class="play-icon"
-                                                                src="./images/product-single/play-icon.svg" alt="...">
+                                                            <img src="./images/1px.jpg" data-src="./images/product-single/play-icon.svg" alt="..."  class="play-icon swiper-lazy" width="67" height="89">
                                                         </div>
                                                         <div class="swiper-slide">
-                                                            <img src="images/product-single/detail5.jpeg" alt="...">
+                                                            <img src="./images/1px.jpg" data-src="./images/product-single/detail5.jpeg" alt="..."  class="img-fluid swiper-lazy" width="67" height="89">
                                                         </div>
                                                         <div class="swiper-slide">
-                                                            <img src="images/product-single/detail6.jpeg" alt="...">
+                                                            <img src="./images/1px.jpg" data-src="./images/product-single/detail6.jpeg" alt="..."  class="img-fluid swiper-lazy" width="67" height="89">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -82,36 +90,30 @@
                                                 <div class="swiper product-gallery quick">
                                                     <div class="swiper-wrapper">
                                                         <div class="swiper-slide">
-                                                            <img src="images/product-single/detail1.jpeg" alt="..."
-                                                                class="img-fluid">
+                                                            <img src="./images/1px.jpg" data-src="./images/product-single/detail1.jpeg" alt="..."  class="img-fluid swiper-lazy" width="570" height="760">
                                                         </div>
                                                         <div class="swiper-slide">
-                                                            <img src="images/product-single/detail2.jpeg" alt="..."
-                                                                class="img-fluid">
+                                                            <img src="./images/1px.jpg" data-src="./images/product-single/detail2.jpeg" alt="..."  class="img-fluid swiper-lazy" width="570" height="760">
                                                         </div>
                                                         <div class="swiper-slide">
-                                                            <img src="images/product-single/detail3.jpeg" alt="..."
-                                                                class="img-fluid">
+                                                            <img src="./images/1px.jpg" data-src="./images/product-single/detail3.jpeg" alt="..."  class="img-fluid swiper-lazy" width="570" height="760">
                                                         </div>
                                                         <div class="swiper-slide">
-                                                            <img src="images/product-single/detail4.jpeg" alt="..."
-                                                                class="img-fluid">
+                                                            <img src="./images/1px.jpg" data-src="./images/product-single/detail4.jpeg" alt="..."  class="img-fluid swiper-lazy" width="570" height="760">
                                                         </div>
                                                         <div class="swiper-slide">
                                                             <div class="position-relative" style="aspect-ratio: 3 / 4;">
                                                                 <iframe
-                                                                    class="position-absolute start-0 top-0 end-0 bottom-0 w-100 h-100"
-                                                                    src="https://www.youtube.com/embed/dvW81bvexh8?controls=1&enablejsapi=1&modestbranding=1&playsinline=1&rel=0"
-                                                                    frameborder="0"></iframe>
+                                                                    class="position-absolute start-0 top-0 end-0 bottom-0 w-100 h-100 lazyload"
+                                                                    data-src="https://www.youtube.com/embed/dvW81bvexh8?controls=1&modestbranding=1&playsinline=1&rel=0"
+                                                                    ></iframe>
                                                             </div>
                                                         </div>
                                                         <div class="swiper-slide">
-                                                            <img src="images/product-single/detail5.jpeg" alt="..."
-                                                                class="img-fluid">
+                                                            <img src="./images/1px.jpg" data-src="./images/product-single/detail5.jpeg" alt="..."  class="img-fluid swiper-lazy" width="570" height="760">
                                                         </div>
                                                         <div class="swiper-slide">
-                                                            <img src="images/product-single/detail6.jpeg" alt="..."
-                                                                class="img-fluid">
+                                                            <img src="./images/1px.jpg" data-src="./images/product-single/detail6.jpeg" alt="..."  class="img-fluid swiper-lazy" width="570" height="760">
                                                         </div>
     
                                                     </div>
@@ -208,7 +210,7 @@
                                                     href="#"><i class="lar la-heart"></i><span class="ms-2 fs-14 fw-600">
                                                         ADD TO WISHLIST</span></a></li>
                                             <li class="list-inline-item"><a class="text-dark text-decoration-none"
-                                                    href="#"><i class="las la-random"></i></i><span
+                                                    href="#"><i class="las la-random"></i><span
                                                         class="ms-2 fs-14 fw-600"> COMPARE</span></a></li>
                                         </ul>
                                         <div class="product-meta mt-auto">
@@ -301,7 +303,7 @@
 				</ul>
             </div>
             <div class="tab-pane fade" id="categoryTab">
-                <ul class="sidebar-menu list-unstyled" id="side-group">
+                <ul class="sidebar-menu list-unstyled">
                     <li>
                         <a href="#"><i class="las la-female me-3 fs-20"></i> Women’s Clothing</a>
                     </li>
@@ -350,7 +352,7 @@
                 <div class="position-relative h-100 overflow-auto custom-scroll">
                    <div class="position-absolute top-0 bottom-0 start-0 end-0 px-3 px-lg-30 ">
                         <div class="cart-popup-item border-top border-whisper py-3 py-lg-30 d-flex">
-                            <img src="images/mini-cart-item1.jpg" alt="..." class="me-3 me-lg-30">
+                            <img src="./images/1px.jpg" data-src="images/mini-cart-item1.jpg" alt="..." class="me-3 me-lg-30 lazyload" width="100" height="133">
                             <div>
                                 <p class="text-woodsmoke">Funny Shorts with Mesh Lining Swimwear Bathing Suits</p>
                                 <p class="fs-15 text-woodsmoke fw-bold">XL / Black</p>
@@ -367,7 +369,7 @@
                             </div>
                         </div>
                         <div class="cart-popup-item border-top border-whisper py-3 py-lg-30 d-flex">
-                            <img src="images/mini-cart-item1.jpg" alt="..." class="me-3 me-lg-30">
+                            <img src="./images/1px.jpg" data-src="images/mini-cart-item1.jpg" alt="..." class="me-3 me-lg-30 lazyload" width="100" height="133">
                             <div>
                                 <p class="text-woodsmoke">Funny Shorts with Mesh Lining Swimwear Bathing Suits</p>
                                 <p class="fs-15 text-woodsmoke fw-bold">XL / Black</p>
@@ -384,7 +386,7 @@
                             </div>
                         </div>
                         <div class="cart-popup-item border-top border-whisper py-3 py-lg-30 d-flex">
-                            <img src="images/mini-cart-item2.jpg" alt="..." class="me-3 me-lg-30">
+                            <img src="./images/1px.jpg" data-src="images/mini-cart-item2.jpg" alt="..." class="me-3 me-lg-30 lazyload" width="100" height="133">
                             <div>
                                 <p class="text-woodsmoke">Funny Shorts with Mesh Lining Swimwear Bathing Suits</p>
                                 <p class="fs-15 text-woodsmoke fw-bold">XL / Black</p>
@@ -544,7 +546,7 @@
                                         <div class="dropdown-menu mega-dropdown rounded-0">
                                             <div class="row row-cols-auto justify-content-between gx-0">
                                                 <div class="col">
-                                                    <img src="images/menu-item1.png" alt="..." class="mb-4 img-fluid">
+                                                    <img src="./images/1px.jpg" data-src="./images/menu-item1.png" alt="..." class="mb-4 img-fluid lazyload d-block aspect-2-1" width="240" height="120">
                                                     <h6 class="mb-4 fw-600">JEANS</h6>
                                                     <ul class="list-unstyled">
                                                         <li class="mb-3"><a class="text-dove text-decoration-none" href="#">Skinny Jeans</a></li>
@@ -555,7 +557,7 @@
                                                     </ul>
                                                 </div>
                                                 <div class="col">
-                                                    <img src="images/menu-item2.png" alt="..." class="mb-4 img-fluid">
+                                                    <img src="./images/1px.jpg" data-src="images/menu-item2.png" alt="..." class="mb-4 img-fluid lazyload d-block aspect-2-1" width="240" height="120">
                                                     <h6 class="mb-4 fw-600">SHIRTS</h6>
                                                     <ul class="list-unstyled">
                                                         <li class="mb-3"><a class="text-dove text-decoration-none" href="#">T-Shirts</a></li>
@@ -566,7 +568,7 @@
                                                     </ul>
                                                 </div>
                                                 <div class="col">
-                                                    <img src="images/menu-item3.png" alt="..." class="mb-4 img-fluid">
+                                                    <img src="./images/1px.jpg" data-src="images/menu-item3.png" alt="..." class="mb-4 img-fluid lazyload d-block aspect-2-1" width="240" height="120">
                                                     <h6 class="mb-4 fw-600">FOOTWEARS</h6>
                                                     <ul class="list-unstyled">
                                                         <li class="mb-3"><a class="text-dove text-decoration-none" href="#">Sneakers</a></li>
@@ -577,7 +579,7 @@
                                                     </ul>
                                                 </div>
                                                 <div class="col">
-                                                    <img src="images/menu-banner1.png" alt="..." class="img-fluid">
+                                                    <img src="./images/1px.jpg" data-src="images/menu-banner1.png" alt="..." class="img-fluid lazyload d-block aspect-3-4" width="300" height="400">
                                                 </div>
                                             </div>
                                         </div>
@@ -587,7 +589,7 @@
                                         <div class="dropdown-menu mega-dropdown rounded-0">
                                             <div class="row row-cols-auto justify-content-between gx-0">
                                                 <div class="col">
-                                                    <img src="images/menu-item1.png" alt="..." class="mb-4 img-fluid">
+                                                    <img src="./images/1px.jpg" data-src="images/menu-item1.png" alt="..." class="mb-4 img-fluid lazyload d-block aspect-2-1" width="240" height="120">
                                                     <h6 class="mb-4 fw-600">JEANS</h6>
                                                     <ul class="list-unstyled">
                                                         <li class="mb-3"><a class="text-dove text-decoration-none" href="#">Skinny Jeans</a></li>
@@ -598,7 +600,7 @@
                                                     </ul>
                                                 </div>
                                                 <div class="col">
-                                                    <img src="images/menu-item2.png" alt="..." class="mb-4 img-fluid">
+                                                    <img src="./images/1px.jpg" data-src="images/menu-item2.png" alt="..." class="mb-4 img-fluid lazyload d-block aspect-2-1" width="240" height="120">
                                                     <h6 class="mb-4 fw-600">SHIRTS</h6>
                                                     <ul class="list-unstyled">
                                                         <li class="mb-3"><a class="text-dove text-decoration-none" href="#">T-Shirts</a></li>
@@ -609,7 +611,7 @@
                                                     </ul>
                                                 </div>
                                                 <div class="col">
-                                                    <img src="images/menu-item3.png" alt="..." class="mb-4 img-fluid">
+                                                    <img src="./images/1px.jpg" data-src="images/menu-item3.png" alt="..." class="mb-4 img-fluid lazyload d-block aspect-2-1"  width="240" height="120">
                                                     <h6 class="mb-4 fw-600">FOOTWEARS</h6>
                                                     <ul class="list-unstyled">
                                                         <li class="mb-3"><a class="text-dove text-decoration-none" href="#">Sneakers</a></li>
@@ -620,7 +622,7 @@
                                                     </ul>
                                                 </div>
                                                 <div class="col">
-                                                    <img src="images/menu-banner1.png" alt="..." class="img-fluid">
+                                                    <img src="./images/1px.jpg" data-src="images/menu-banner1.png" alt="..." class="img-fluid lazyload d-block aspect-3-4" width="300" height="400">
                                                 </div>
                                             </div>
                                         </div>
@@ -639,7 +641,7 @@
                     </div>
                     <div class="col col-lg-2 text-center">
                         <a href="index.html">
-                            <img src="images/logo.svg" alt="...">
+                            <img src="images/logo.svg" width="153" height="41" alt="..." class="nav-logo img-fluid">
                         </a>
                     </div>
                     <div class="col col-lg-5">
@@ -670,12 +672,12 @@
                         </div>
                     </div>
                 </div>
-
+                
             </div>
         </div>
         <div class="header-bottom bg-black">
             <div class="container text-center">
-                <p class="text-light mb-0">COVID 19 UPDATE: WORLDWIDE FREESHIP 🚀</p>
+                <p class="text-light mb-0">COVID 19 UPDATE: WORLDWIDE FREESHIP <i class="las la-rocket"></i></p>
             </div>
         </div>
     </header>
@@ -705,7 +707,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slider-image" style="background-image: url(images/slider-01.jpg);"></div>
+                    <div class="slider-image" data-bg="./images/slider-01.jpg"></div>
                 </div>
                 <div class="swiper-slide">
                     <div class="slider-text">
@@ -713,7 +715,7 @@
                             <div class="row justify-content-end">
                                 <div class="col-xl-8 col-xxl-6">
                                     <div class="slider-title mb-2 mb-lg-4">
-                                        <h1 class=" mb-0" ">
+                                        <h1 class="mb-0">
                                             Autumn’s Coming...
                                         </h1>
                                     </div>	
@@ -727,7 +729,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slider-image" style="background-image: url(images/slider-02.jpg);"></div>
+                    <div class="slider-image" data-bg="./images/slider-02.jpg"></div>
                 </div>
                 <div class="swiper-slide">
                     <div class="slider-text">
@@ -735,7 +737,7 @@
                             <div class="row">
                                 <div class="col-xl-8 col-xxl-6">
                                     <div class="slider-title mb-2 mb-lg-4">
-                                        <h1 class=" mb-0" ">
+                                        <h1 class="mb-0">
                                             Autumn’s Coming...
                                         </h1>
                                     </div>	
@@ -749,7 +751,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slider-image" style="background-image: url(images/slider-03.jpg);"></div>
+                    <div class="slider-image" data-bg="./images/slider-03.jpg"></div>
                 </div>
 
             </div>
@@ -765,7 +767,7 @@
         <div class="home-categories-inner row row-cols-sm-3 gx-0">
             <div class="cat-item position-relative d-flex flex-column">
                 <div class="overflow-hidden">
-                    <div class="cat-image" style="background-image: url(images/home-collection-1.jpg)"></div>
+                    <div class="cat-image lazyload" data-bg="./images/home-collection-1.jpg"></div>
                 </div> 
                 <div class="cat-name d-flex align-items-center justify-content-center text-center">
                     <div>
@@ -783,13 +785,13 @@
                     </div>
                 </div>
                 <div class="overflow-hidden order-1 order-sm-2">
-                    <div class="cat-image" style="background-image: url(images/home-collection-2.jpg)"></div>
+                    <div class="cat-image lazyload" data-bg="./images/home-collection-2.jpg"></div>
                 </div> 
                 <a href="#" class="cat-link stretched-link"></a>
             </div>
             <div class="cat-item position-relative d-flex flex-column">
                 <div class="overflow-hidden">
-                    <div class="cat-image" style="background-image: url(images/home-collection-3.jpg)"></div>
+                    <div class="cat-image lazyload" data-bg="./images/home-collection-3.jpg"></div>
                 </div> 
                 <div class="cat-name d-flex align-items-center justify-content-center text-center">
                     <div>
@@ -809,14 +811,15 @@
             <h3 class="mb-4">Best Seller</h3>
             <a href="#" class="btn py-lg-10 px-lg-40 btn-outline-light">VIEW ALL</a>
         </div> 
-        <div class="product-slider swiper">
+        <div class="product-slider swiper lazyload lazyload">
             <div class="swiper-wrapper mb-4 mb-lg-60">
                 <div class="swiper-slide">
                     <div class="product">
                         <div class="product-inner">
                             <div class="product-image position-relative mb-3">
                                 <a class="d-block text-center" href="#">
-                                    <img src="images/product/product-1.jpg" alt="..." class="img-fluid">
+                                    <img src="./images/1px.jpg" data-src="images/product/product-1.jpg" alt="..." class="img-fluid swiper-lazy" width="264" height="352">
+                                    <div class="swiper-lazy-preloader"></div>
                                 </a> 
                                 <div class="product-labels">
                                     <span class="label-sale">SALE</span>
@@ -844,7 +847,8 @@
                         <div class="product-inner">
                             <div class="product-image position-relative mb-3">
                                 <a class="d-block text-center" href="#">
-                                    <img src="images/product/product-2.jpg" alt="..." class="img-fluid">
+                                    <img src="./images/1px.jpg" data-src="images/product/product-2.jpg" alt="..." class="img-fluid swiper-lazy" width="264" height="352">
+                                    <div class="swiper-lazy-preloader"></div>
                                 </a> 
                                 <div class="product-buttons">
                                     <a class="text-decoration-none" href="#"><i class="las la-shopping-cart"></i></a>
@@ -868,7 +872,8 @@
                         <div class="product-inner">
                             <div class="product-image position-relative mb-3">
                                 <a class="d-block text-center" href="#">
-                                    <img src="images/product/product-3.jpg" alt="..." class="img-fluid">
+                                    <img src="./images/1px.jpg" data-src="images/product/product-3.jpg" alt="..." class="img-fluid swiper-lazy" width="264" height="352">
+                                    <div class="swiper-lazy-preloader"></div>
                                 </a> 
                                 <div class="product-labels">
                                     <span class="label-new">NEW</span>
@@ -895,7 +900,8 @@
                         <div class="product-inner">
                             <div class="product-image position-relative mb-3">
                                 <a class="d-block text-center" href="#">
-                                    <img src="images/product/product-4.jpg" alt="..." class="img-fluid">
+                                    <img src="./images/1px.jpg" data-src="images/product/product-4.jpg" alt="..." class="img-fluid swiper-lazy" width="264" height="352">
+                                    <div class="swiper-lazy-preloader"></div>
                                 </a> 
                                 <div class="product-buttons">
                                     <a class="text-decoration-none" href="#"><i class="las la-shopping-cart"></i></a>
@@ -916,7 +922,7 @@
                 </div>
 
             </div>
-            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-pagination"></div> -->
             <div class="swiper-button-prev d-none d-xl-flex"></div>
             <div class="swiper-button-next d-none d-xl-flex"></div>
         </div>
@@ -930,7 +936,7 @@
                 <div class="col-12">
                     <div class="banner-inner position-relative">
                         <div class="banner-image overflow-hidden">
-                            <img src="images/home-banner-1.jpg" alt="..." class="img-fluid">
+                            <img src="./images/1px.jpg" data-src="images/home-banner-1.jpg" alt="..." class="img-fluid lazyload" data-banner="1" width="1146" height="567">
                         </div>
                         <div class="banner-desc position-absolute top-0 start-0 end-0 bottom-0">
                             <div class="container-fluid h-100">
@@ -952,7 +958,7 @@
                 <div class="col-md-6 mb-3 mb-lg-0">
                     <div class="banner-inner position-relative">
                         <div class="banner-image overflow-hidden">
-                            <img src="images/home-banner-2.jpg" alt="..." class="img-fluid">
+                            <img src="./images/1px.jpg" data-src="images/home-banner-2.jpg" alt="..." class="img-fluid lazyload" data-banner="2" width="561" height="236">
                         </div>
                         <div class="banner-desc position-absolute top-0 start-0 end-0 bottom-0">
                             <div class="container-fluid h-100">
@@ -970,13 +976,13 @@
                 <div class="col-md-6">
                     <div class="banner-inner position-relative">
                         <div class="banner-image overflow-hidden">
-                            <img src="images/home-banner-3.jpg" alt="..." class="img-fluid">
+                            <img src="./images/1px.jpg" data-src="images/home-banner-3.jpg" alt="..." class="img-fluid lazyload" data-banner="2" width="561" height="236">
                         </div>
                         <div class="banner-desc position-absolute top-0 start-0 end-0 bottom-0">
                             <div class="container-fluid h-100">
                                 <div class="row align-items-center justify-content-end h-100 text-end">
                                     <div class="col-12">
-                                        <img src="./images/banner-logo.png" alt="..." class="mb-2">
+                                        <img src="./images/1px.jpg" data-src="./images/banner-logo.png" alt="..." class="mb-2 d-block lazyload ms-auto" style="aspect-ratio:90/19" width="180" height="38">
                                         <p>Shop Now. Enjoy Now. Pay Later.</p>
                                         <a href="#" class="btn btn-default py-lg-10 px-lg-40 rounded-0 stretched-link">VIEW ALL ITEMS</a>
                                     </div>
@@ -1005,7 +1011,7 @@
                 <div class="col mb-3 mb-lg-0">
                     <div class="banner-inner position-relative">
                         <div class="banner-image overflow-hidden">
-                            <img src="images/shopby-1.jpg" alt="..." class="w-100">
+                            <img src="./images/1px.jpg" data-src="images/shopby-1.jpg" alt="..." class="w-100 lazyload ratio ratio-1x1" width="210" height="210">
                         </div>
                         <div class="banner-desc position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
                             <a href="#" class="text-white mb-0 text-decoration-none h4 stretched-link">TANK</a>
@@ -1015,7 +1021,7 @@
                 <div class="col mb-3 mb-lg-0">
                     <div class="banner-inner position-relative">
                         <div class="banner-image overflow-hidden">
-                            <img src="images/shopby-2.jpg" alt="..." class="w-100">
+                            <img src="./images/1px.jpg" data-src="images/shopby-2.jpg" alt="..." class="w-100 lazyload ratio ratio-1x1" width="210" height="210">
                         </div>
                         <div class="banner-desc position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
                             <a href="#" class="text-white mb-0 text-decoration-none h4 stretched-link">SHORTS</a>
@@ -1025,7 +1031,7 @@
                 <div class="col mb-3 mb-lg-0">
                     <div class="banner-inner position-relative">
                         <div class="banner-image overflow-hidden">
-                            <img src="images/shopby-3.jpg" alt="..." class="w-100">
+                            <img src="./images/1px.jpg" data-src="images/shopby-3.jpg" alt="..." class="w-100 lazyload ratio ratio-1x1" width="210" height="210">
                         </div>
                         <div class="banner-desc position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
                             <a href="#" class="text-white mb-0 text-decoration-none h4 stretched-link">SHIRTS</a>
@@ -1035,7 +1041,7 @@
                 <div class="col mb-3 mb-lg-0">
                     <div class="banner-inner position-relative">
                         <div class="banner-image overflow-hidden">
-                            <img src="images/shopby-4.jpg" alt="..." class="w-100">
+                            <img src="./images/1px.jpg" data-src="images/shopby-4.jpg" alt="..." class="w-100 lazyload ratio ratio-1x1" width="210" height="210">
                         </div>
                         <div class="banner-desc position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
                             <a href="#" class="text-white mb-0 text-decoration-none h4 stretched-link">JEANS</a>
@@ -1045,7 +1051,7 @@
                 <div class="col mb-3 mb-lg-0 d-none d-lg-block">
                     <div class="banner-inner position-relative">
                         <div class="banner-image overflow-hidden">
-                            <img src="images/shopby-5.jpg" alt="..." class="w-100">
+                            <img src="./images/1px.jpg" data-src="images/shopby-5.jpg" alt="..." class="w-100 lazyload ratio ratio-1x1" width="210" height="210">
                         </div>
                         <div class="banner-desc position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
                             <a href="#" class="text-white mb-0 text-decoration-none h4 stretched-link">FOOTWEAR</a>
@@ -1064,15 +1070,15 @@
             <div class="row justify-content-center text-center">
                 <div class="col-lg-10">
                     <h4>The best sets you'll ever wear — made in Ontario from locally-sourced merino wool
-                        Products provided by Uniso</h4>
+                        Products provided by Unishop</h4>
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
     <!-- home desc -->
 
     <!-- latest blog start -->
-    <section class="latest-blog mb-4 mb-lg-80">
+    <section class="latest-blog mb-4 mb-lg-80 lazyload">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -1088,7 +1094,9 @@
                             <div class="swiper-slide">
                                 <article class="col blog-post">
                                     <div class="post-image overflow-hidden mb-3">
-                                        <a href="#"><img src="images/blog/blog-1.jpg" alt="..." class="img-fluid"></a>
+                                        <a href="#">
+                                            <img src="./images/1px.jpg" data-src="./images/blog/blog-1.jpg" alt="..." class="img-fluid lazyload" width="362" height="272">
+                                        </a>
                                     </div>
                                     <div class="post-info text-center">
                                         <p class="post-date text-dove mb-2">MAY 15, 2020</p>
@@ -1099,7 +1107,9 @@
                             <div class="swiper-slide">
                                 <article class="col blog-post">
                                     <div class="post-image overflow-hidden mb-3">
-                                        <a href="#"><img src="images/blog/blog-2.jpg" alt="..." class="img-fluid"></a>
+                                        <a href="#">
+                                            <img src="./images/1px.jpg" data-src="./images/blog/blog-2.jpg" alt="..." class="img-fluid lazyload" width="362" height="272">
+                                        </a>
                                     </div>
                                     <div class="post-info text-center">
                                         <p class="post-date text-dove mb-2">MAY 15, 2020</p>
@@ -1110,7 +1120,9 @@
                             <div class="swiper-slide">
                                 <article class="col blog-post">
                                     <div class="post-image overflow-hidden mb-3">
-                                        <a href="#"><img src="images/blog/blog-3.jpg" alt="..." class="img-fluid"></a>
+                                        <a href="#">
+                                            <img src="./images/1px.jpg" data-src="./images/blog/blog-3.jpg" alt="..." class="img-fluid lazyload" width="362" height="272">
+                                        </a>
                                     </div>
                                     <div class="post-info text-center">
                                         <p class="post-date text-dove mb-2">MAY 15, 2020</p>
@@ -1126,7 +1138,7 @@
             </div>
         </div>
     </section>
-    <!-- latest blog end -->
+    <!-- latest blog end -->    
 
     <!-- insta feed start -->
     <section class="insta-feed border-top border-whisper pt-4 pt-lg-80">
@@ -1138,32 +1150,32 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="overflow-hidden">
-                        <a class="d-block" href="#"><img src="images/insta-1.jpg" alt="..." class="img-fluid img-hover"></a>
+                        <a class="d-block" href="#"><img src="./images/1px.jpg" data-src="images/insta-1.jpg" alt="..." class="w-100 img-hover lazyload aspect-1-1" width="317" height="317"></a>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="overflow-hidden">
-                        <a class="d-block" href="#"><img src="images/insta-2.jpg" alt="..." class="img-fluid img-hover"></a>
+                        <a class="d-block" href="#"><img src="./images/1px.jpg" data-src="images/insta-2.jpg" alt="..." class="w-100 img-hover lazyload aspect-1-1" width="317" height="317"></a>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="overflow-hidden">
-                        <a class="d-block" href="#"><img src="images/insta-3.jpg" alt="..." class="img-fluid img-hover"></a>
+                        <a class="d-block" href="#"><img src="./images/1px.jpg" data-src="images/insta-3.jpg" alt="..." class="w-100 img-hover lazyload aspect-1-1" width="317" height="317"></a>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="overflow-hidden">
-                        <a class="d-block" href="#"><img src="images/insta-4.jpg" alt="..." class="img-fluid img-hover"></a>
+                        <a class="d-block" href="#"><img src="./images/1px.jpg" data-src="images/insta-4.jpg" alt="..." class="w-100 img-hover lazyload aspect-1-1" width="317" height="317"></a>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="overflow-hidden">
-                        <a class="d-block" href="#"><img src="images/insta-5.jpg" alt="..." class="img-fluid img-hover"></a>
+                        <a class="d-block" href="#"><img src="./images/1px.jpg" data-src="images/insta-5.jpg" alt="..." class="w-100 img-hover lazyload aspect-1-1" width="317" height="317"></a>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="overflow-hidden">
-                        <a class="d-block" href="#"><img src="images/insta-6.jpg" alt="..." class="img-fluid img-hover"></a>
+                        <a class="d-block" href="#"><img src="./images/1px.jpg" data-src="images/insta-6.jpg" alt="..." class="w-100 img-hover lazyload aspect-1-1" width="317" height="317"></a>
                     </div>
                 </div>
                
@@ -1173,7 +1185,7 @@
     </section>
     <!-- insta feed end -->
 
-     <!-- footer start -->
+    <!-- footer start -->
     <section class="footer">
         <div class="bg-gray py-5 py-lg-60">
             <div class="container-lg">
@@ -1236,8 +1248,8 @@
                         </div>
                         <ul class="list-inline social mb-0">
                             <li class="list-inline-item"><a class="text-decoration-none text-dove" href="#"><i class="lab la-facebook-f"></i></a></li>
-                            <li class="list-inline-item"><a class="text-decoration-none text-dove" href="#"><i class="lab la-instagram"></i></i></a></li>
-                            <li class="list-inline-item"><a class="text-decoration-none text-dove" href="#"><i class="lab la-pinterest-p"></i></i></a></li>
+                            <li class="list-inline-item"><a class="text-decoration-none text-dove" href="#"><i class="lab la-instagram"></i></a></li>
+                            <li class="list-inline-item"><a class="text-decoration-none text-dove" href="#"><i class="lab la-pinterest-p"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -1247,15 +1259,15 @@
             <div class="container-lg">
                 <div class="d-flex flex-column flex-lg-row justify-content-lg-between text-center align-items-center py-21">
                     <ul class="footer-list list-inline mb-lg-0">
-                        <li class="list-inline-item border-end border-whisper pe-3"><a class="text-decoration-none text-dove" href="#">© Uniso 2020. All Rights Reserved</a></li>
+                        <li class="list-inline-item border-end border-whisper pe-3"><a class="text-decoration-none text-dove" href="#">© Unishop 2020. All Rights Reserved</a></li>
                         <li class="list-inline-item border-end border-whisper pe-3"><a class="text-decoration-none text-dove" href="#">Privacy Policy</a></li>
                         <li class="list-inline-item"><a class="text-decoration-none text-dove" href="#">Terms & Conditions</a></li>
                     </ul>
-                    <img src="images/payment-methods.png" alt="..." class="img-fluid">
+                    <img src="./images/1px.jpg" data-src="images/payment-methods.png" alt="..." class="img-fluid lazyload d-block" width="372" height="35">
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
     <!-- footer end -->
 
     <!-- back to top start -->
@@ -1265,18 +1277,32 @@
     <!-- back to top end -->
 
     <!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
     <!-- bootstrap js -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js" async></script>
     <!-- swiper -->
-    <script src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/plugins/swiper/swiper-bundle.min.js" async></script>
     <!-- fancybox -->
-    <script src="./assets/plugins/fancybox/fancybox.umd.js"></script>
+    <script src="./assets/plugins/fancybox/fancybox.umd.js" defer></script>
     <!-- zoom -->
-    <script src="./assets/plugins/jquery.zoom.js"></script>
+    <script src="./assets/plugins/jquery.zoom.js" async></script>
+    <!-- lazysizes -->
+    <script>
+        (function(){
+            window.lazySizesConfig = window.lazySizesConfig || {};
+            window.lazySizesConfig.loadMode = 1;
+            window.lazySizesConfig.expand = 10;
+            window.lazySizesConfig.expFactor = 1.5;
+            lazySizesConfig.loadHidden = false
+        })();
+    </script>
+    <script src="./assets/plugins/lazysizes/ls.unveilhooks.js"></script>
+    <script src="./assets/plugins/lazysizes/lazysizes.min.js"></script>
+    <!-- vanilla lazyload -->
+    <script src="./assets/plugins/lazyload.min.js" async></script>
 
     <!-- custom theme js -->
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.js" async></script>
 
 </body>
 
