@@ -70,12 +70,14 @@
         height: 40px;
         margin: 0 5px;
         opacity: 0;
-        transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+                transform: translateY(10px);
     }
     .product-gallery .swiper-button-next,
     .product-gallery .swiper-button-prev {
         opacity: 0;
-        transform: scale(.7);
+        -webkit-transform: scale(.7);
+                transform: scale(.7);
     }
     .lh-lg-36 {
         line-height: 36px;
@@ -180,8 +182,14 @@
     }
     #mynavbar ul.navbar-nav > li > a {
         min-height: 72px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
-        align-items:center;
+        -webkit-box-align:center;
+        -webkit-align-items:center;
+            -ms-flex-align:center;
+                align-items:center;
         position:relative;
         margin-right: 0.5rem;
         margin-left: 0.5rem;
@@ -199,6 +207,7 @@
         bottom:calc(25% - 1px);
         height: 2px;
         background-color: transparent;
+        -webkit-transition: background-color .3s linear;
         transition: background-color .3s linear;
     }
     #mynavbar ul.navbar-nav > li:hover > a:after {
@@ -257,7 +266,11 @@
     .product-buttons {
         padding:5px;
         top:0;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .product-buttons > a  {
         margin:2px 0;
@@ -274,8 +287,12 @@
         background-color:#fff;
         height:100%;
         width:300px;
-        transform:translateX(-100%);
+        -webkit-transform:translateX(-100%);
+                transform:translateX(-100%);
+        -webkit-transition:-webkit-transform .2s;
+        transition:-webkit-transform .2s;
         transition:transform .2s;
+        transition:transform .2s, -webkit-transform .2s;
     }
     .filter-widget {
         padding-left: 16px;
@@ -287,7 +304,8 @@
         padding-top:16px;
     }
     .filterbar.show {
-        transform:translate(0,0);
+        -webkit-transform:translate(0,0);
+                transform:translate(0,0);
     }
     .filter-title {
         padding:10px 16px;
@@ -304,7 +322,8 @@
         padding-right:0;
     }
     .collection-banner .banner-image > img {
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         height: 300px!important;
     }
 }
