@@ -2,16 +2,16 @@
 Unishop bootstrap ecommerce template
 
 ## All Pages
-https://onderakbulut.github.io/unishop/index.html \
-https://onderakbulut.github.io/unishop/collection.html \
-https://onderakbulut.github.io/unishop/product-single.html \
-https://onderakbulut.github.io/unishop/login.html \
-https://onderakbulut.github.io/unishop/register.html \
-https://onderakbulut.github.io/unishop/blog.html \
-https://onderakbulut.github.io/unishop/blog-detail.html \
-https://onderakbulut.github.io/unishop/about-us.html \
-https://onderakbulut.github.io/unishop/cart.html \
-https://onderakbulut.github.io/unishop/wishlist.html
+https://onderakbulut.com/demo-1/index.html \
+https://onderakbulut.com/demo-1/collection.html \
+https://onderakbulut.com/demo-1/product-single.html \
+https://onderakbulut.com/demo-1/login.html \
+https://onderakbulut.com/demo-1/register.html \
+https://onderakbulut.com/demo-1/blog.html \
+https://onderakbulut.com/demo-1/blog-detail.html \
+https://onderakbulut.com/demo-1/about-us.html \
+https://onderakbulut.com/demo-1/cart.html \
+https://onderakbulut.com/demo-1/wishlist.html
 
 
 
